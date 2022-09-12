@@ -4,7 +4,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      xs: "375",
+      xs: "375px",
       // => @media (min-width: 375px) { ... }
       sm: "640px",
       // => @media (min-width: 640px) { ... }
