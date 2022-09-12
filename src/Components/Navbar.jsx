@@ -40,17 +40,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden lg:block bg-[#1F1F1F] w-[400px] h-screen absolute border-r-2 border-[#FF3131] px-12 py-12">
+      <div className="hidden lg:block bg-[#1F1F1F] lg:w-[320px] xl:w-[420px] w-[400px] h-screen absolute border-r-2 border-[#FF3131] px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
         <Link to={"/"}>
-          <h1 className="text-[2.2rem] xl:text-[2.5rem] font-bold tracking-widest text-white">
+          <h1 className="text-[2.2rem] lg:text-[2rem] xl:text-[2.5rem] font-bold tracking-widest text-white">
             Mango Devs
           </h1>
-          <p className="text-[#FF3131] text-xl xl:text-2xl tracking-widest">
+          <p className="text-[#FF3131] lg:text-lg text-xl xl:text-2xl tracking-widest">
             Web Developer
           </p>
         </Link>
 
-        <ul className="mt-8 xl:mt-10 space-y-2 text-xl xl:text-3xl xl:space-y-4 text-white">
+        <ul className="mt-6 xl:mt-12 space-y-2 text-xl xl:text-3xl xl:space-y-4 text-white">
           <li>
             <Link to={"/skills"}>Skills & Tools</Link>
           </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <ul className="mt-8 xl:mt-10 space-y-2 xl:space-y-4">
+        <ul className="mt-6 xl:mt-12 space-y-2 xl:space-y-4">
           <li className="flex items-center">
             <svg viewBox="0 0 128 128" className="h-[25px] xl:h-[35px]">
               <g fill="#fff">
@@ -97,20 +97,20 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="w-full px-6 py-6 mt-8 xl:mt-10 space-y-4 text-justify text-white border-2 border-gray-500 rounded-md">
-          <h1 className="text-xl xl:text-2xl font-semibold tracking-widest text-red-500">
+        <div className="w-full px-4 py-6 xl:px-8 xl:py-8 mt-6 xl:mt-12 lg:space-y-2 xl:space-y-6 text-justify text-white border-2 border-gray-500 rounded-md">
+          <h1 className="text-lg xl:text-2xl font-semibold tracking-widest text-red-500">
             Joke of the Day!
           </h1>
-          <p className="xl:text-2xl">
+          <p className="xl:text-xl lg:text-sm">
             I used to visit a casino, until I found out their top floor
             restaurant served beef.
           </p>
-          <p className="italic font-medium xl:text-2xl">
+          <p className="italic font-medium xl:text-xl lg:text-sm">
             That meant the steaks were just too high for me.
           </p>
         </div>
 
-        <div className="relative w-16 mt-8 xl:mt-10 bg-gray-500 rounded-full">
+        <div className="relative w-16 mt-8 lg:mt-6 xl:mt-12 bg-gray-500 rounded-full">
           <FaSun className="w-8 h-8 p-1 bg-white rounded-full" />
         </div>
       </div>

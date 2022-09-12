@@ -6,7 +6,7 @@ import { onDisplayVariant } from "../motionVariants";
 const Hero = () => {
   return (
     <div
-      className="flex flex-col w-full h-full p-8 bg-right bg-no-repeat bg-cover pt-28 xl:bg-bottom lg:pl-20 xl:pl-32 xl:pt-32"
+      className="flex flex-col w-full h-full p-8 bg-right bg-no-repeat bg-cover lg:pt-16 pt-28 xl:bg-bottom lg:pl-24 xl:pl-32 xl:pt-32"
       style={{ backgroundImage: `url(${mainBg})` }}
     >
       <motion.h1
