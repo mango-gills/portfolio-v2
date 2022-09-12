@@ -54,9 +54,13 @@ const Navbar = () => {
           <li>
             <Link to={"/skills"}>Skills & Tools</Link>
           </li>
-          <li>Projects</li>
+          <li>
+            <Link to={"/projects"}>Projects</Link>
+          </li>
           <li>CV</li>
-          <li>Contact</li>
+          <li>
+            <Link to={"/contact"}>Contact</Link>
+          </li>
         </ul>
 
         <ul className="mt-12 space-y-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import { elementStyles } from "../Styles";
+import { elementStyles } from "../styles";
 
 const Contact = () => {
   return (
