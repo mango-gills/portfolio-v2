@@ -40,17 +40,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden xl:block bg-[#1F1F1F] w-[400px] h-full absolute border-r-2 border-[#FF3131] px-12 py-12">
+      <div className="hidden lg:block bg-[#1F1F1F] w-[400px] h-full absolute border-r-2 border-[#FF3131] px-12 py-12">
         <Link to={"/"}>
-          <h1 className="text-[2.5rem] font-bold tracking-widest text-white">
+          <h1 className="text-[2.2rem] xl:text-[2.5rem] font-bold tracking-widest text-white">
             Mango Devs
           </h1>
-          <p className="text-[#FF3131] text-2xl tracking-widest">
+          <p className="text-[#FF3131] text-xl xl:text-2xl tracking-widest">
             Web Developer
           </p>
         </Link>
 
-        <ul className="mt-12 space-y-4 text-2xl text-white">
+        <ul className="mt-8 xl:mt-10 space-y-2 text-xl xl:text-3xl xl:space-y-4 text-white">
           <li>
             <Link to={"/skills"}>Skills & Tools</Link>
           </li>
@@ -63,9 +63,9 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <ul className="mt-12 space-y-4">
+        <ul className="mt-8 xl:mt-10 space-y-2 xl:space-y-4">
           <li className="flex items-center">
-            <svg viewBox="0 0 128 128" width="25px" height="25px">
+            <svg viewBox="0 0 128 128" className="h-[25px] xl:h-[35px]">
               <g fill="#fff">
                 <path
                   fillRule="evenodd"
@@ -76,10 +76,12 @@ const Navbar = () => {
               </g>
             </svg>
 
-            <p className="ml-2 text-xl text-white">Github</p>
+            <p className="ml-2 xl:ml-4 xl:text-2xl text-xl text-white">
+              Github
+            </p>
           </li>
           <li className="flex items-center">
-            <svg viewBox="0 0 128 128" width="25px" height="25px">
+            <svg viewBox="0 0 128 128" className="h-[25px] xl:h-[35px]">
               <path
                 fill="#fff"
                 d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"
@@ -89,30 +91,32 @@ const Navbar = () => {
                 d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"
               ></path>
             </svg>
-            <p className="ml-2 text-xl text-white">LinkedIn</p>
+            <p className="ml-2 xl:ml-4 xl:text-2xl text-xl text-white">
+              LinkedIn
+            </p>
           </li>
         </ul>
 
-        <div className="w-full px-6 py-8 mt-12 space-y-4 text-justify text-white border-2 border-gray-500 rounded-md">
-          <h1 className="text-xl font-semibold tracking-widest text-red-500">
+        <div className="w-full px-6 py-6 mt-8 xl:mt-10 space-y-4 text-justify text-white border-2 border-gray-500 rounded-md">
+          <h1 className="text-xl xl:text-2xl font-semibold tracking-widest text-red-500">
             Joke of the Day!
           </h1>
-          <p>
+          <p className="xl:text-2xl">
             I used to visit a casino, until I found out their top floor
             restaurant served beef.
           </p>
-          <p className="italic font-medium">
+          <p className="italic font-medium xl:text-2xl">
             That meant the steaks were just too high for me.
           </p>
         </div>
 
-        <div className="relative w-16 mt-12 bg-gray-500 rounded-full">
+        <div className="relative w-16 mt-8 xl:mt-10 bg-gray-500 rounded-full">
           <FaSun className="w-8 h-8 p-1 bg-white rounded-full" />
         </div>
       </div>
 
       {/* Mobile Navigation */}
-      <div className="fixed flex items-center justify-between w-full px-6 py-4 text-white border-b-2 border-red-500 xl:hidden bg-[#08060c] z-1">
+      <div className="fixed flex items-center justify-between w-full px-6 py-4 text-white border-b-2 border-red-500 lg:hidden bg-[#08060c] z-1">
         <Link to={"/"} className="cursor-pointer select-none">
           <h1 className="text-2xl font-bold tracking-widest text-white sm:text-3xl">
             Mango Devs
