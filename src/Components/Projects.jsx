@@ -3,7 +3,7 @@ import { elementStyles } from "../styles";
 
 const Projects = () => {
   return (
-    <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse lg:h-full lg:items-start lg:py-14">
+    <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse lg:h-full lg:items-start lg:py-12">
       <div className="pr-16 pl-4 py-4 space-y-6 text-white lg:w-[60%] lg:space-y-0">
         <h1 className="text-2xl font-bold lg:hidden">PROJECTS</h1>
         <img className="" src="./p5-1.png" alt="" />

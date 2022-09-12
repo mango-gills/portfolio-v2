@@ -6,7 +6,7 @@ const ProjectsPage = () => {
   return (
     <div className="bg-[#161617] w-full h-full lg:h-screen">
       <Navbar />
-      <div className="xl:ml-[100px] h-full lg:h-screen">
+      <div className="xl:ml-[80px] h-full lg:h-screen">
         <Projects />
       </div>
     </div>
