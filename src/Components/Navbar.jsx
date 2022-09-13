@@ -40,12 +40,13 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden lg:block bg-[#1F1F1F] lg:w-[24%] xl:w-[22%] w-[400px] h-screen absolute border-r-2 border-[#FF3131] px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
+      <div className="hidden lg:flex lg:flex-col lg:justify-around bg-[#1F1F1F] lg:w-[20%] xl:w-[18%] w-[400px] h-screen absolute border-r-2 border-[#FF3131] px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
+        <div className="top-nav">
         <Link to={"/"}>
-          <h1 className="text-[2.2rem] lg:text-[2rem] xl:text-[2.5rem] font-bold tracking-widest text-white">
+          <h1 className="text-[2.2rem] lg:text-[1.6rem] xl:text-[2rem] font-bold tracking-widest text-white">
             Mango Devs
           </h1>
-          <p className="text-[#FF3131] lg:text-lg text-xl xl:text-2xl tracking-widest">
+          <p className="text-[#FF3131] lg:text-lg text-xl xl:text-xl tracking-widest">
             Web Developer
           </p>
         </Link>
@@ -96,6 +97,7 @@ const Navbar = () => {
             </p>
           </li>
         </ul>
+        </div>
 {/* 
         <div className="w-full overflow-y-clip px-4 py-4 xl:px-8 xl:py-4 mt-6 xl:mt-12 lg:space-y-2 xl:space-y-2 text-center  text-white border-2 border-gray-500 rounded-md">
           <h1 className="text-base xl:text-lg font-semibold tracking-widest text-red-500">
