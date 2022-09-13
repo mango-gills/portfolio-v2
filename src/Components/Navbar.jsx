@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden lg:block bg-[#1F1F1F] lg:w-[320px] xl:w-[420px] w-[400px] h-screen absolute border-r-2 border-[#FF3131] px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
+      <div className="hidden lg:block bg-[#1F1F1F] lg:w-[24%] xl:w-[22%] w-[400px] h-screen absolute border-r-2 border-[#FF3131] px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
         <Link to={"/"}>
           <h1 className="text-[2.2rem] lg:text-[2rem] xl:text-[2.5rem] font-bold tracking-widest text-white">
             Mango Devs

@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="bg-[#161617] w-full h-screen">
       <Navbar />
-      <div className="lg:ml-[320px] xl:ml-[400px] h-screen">
+      <div className="lg:ml-[24%] xl:ml-[22%] h-screen">
         <Hero />
         <div className="lg:hidden">
           <Skills />
