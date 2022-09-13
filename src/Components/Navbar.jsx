@@ -64,7 +64,7 @@ const Navbar = () => {
         </ul>
 
         <ul className="mt-6 xl:mt-12 space-y-2 xl:space-y-4">
-          <li className="flex items-center">
+          <li className="flex items-center ">
             <svg viewBox="0 0 128 128" className="h-[25px] xl:h-[35px]">
               <g fill="#fff">
                 <path
