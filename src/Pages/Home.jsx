@@ -8,9 +8,9 @@ import Skills from "../Components/Skills";
 
 const Home = () => {
   return (
-    <div className="bg-[#161617] w-full h-screen">
+    <div className="bg-[#161617] relative w-full h-screen">
       <Navbar />
-      <div className="lg:ml-[24%] xl:ml-[22%] h-screen">
+      <div className="lg:ml-[20%] lg:absolute xl:ml-[18%] lg:inset-0">
         <Hero />
         <div className="lg:hidden">
           <Skills />

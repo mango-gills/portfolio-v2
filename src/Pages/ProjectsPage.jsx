@@ -4,9 +4,9 @@ import Projects from "../Components/Projects";
 
 const ProjectsPage = () => {
   return (
-    <div className="bg-[#161617] w-full h-full lg:h-screen">
+    <div className="bg-[#161617] w-full h-full">
       <Navbar />
-      <div className="xl:ml-[80px] h-full lg:h-screen">
+      <div className="xl:ml-[80px] h-full">
         <Projects />
       </div>
     </div>
