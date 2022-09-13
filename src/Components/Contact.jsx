@@ -10,7 +10,7 @@ const Contact = () => {
       <h1 className="text-3xl font-bold lg:text-5xl lg:mb-8 xl:text-7xl xl:mb-10">Get in touch</h1>
       <p className="my-2 text-red-500 xl:text-xl">@: markencinares@gmail.com</p>
       <form className="w-full py-4 space-y-6 xl:space-y-6">
-        <div className="flex flex-col space-x-4 lg:flex-row">
+        <div className="flex flex-col space-y-6 lg:space-y-0 lg:space-x-4 lg:flex-row">
         <input
           type="text"
           className={elementStyles.inputStyle}
