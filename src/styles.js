@@ -8,5 +8,5 @@ export const elementStyles = {
   projectCard:
     "grid w-full h-16 xl:h-32 bg-[#3D3D3D] border-2 border-[#515151] shadow-black rounded-md sm:h-20 place-items-center",
   projectCardHeading:
-    "mb-1 text-sm font-bold sm:text-xl lg:text-xl xl:text-3xl text-[#FF3131]",
+    "mb-1 text-sm font-semibold tracking-wider sm:text-xl lg:text-lg xl:text-[1.7rem] text-[#FF3131]",
 };

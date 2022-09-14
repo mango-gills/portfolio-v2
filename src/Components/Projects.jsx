@@ -3,8 +3,8 @@ import { elementStyles } from "../styles";
 
 const Projects = () => {
   return (
-    <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse h-full lg:items-start lg:py-4 xl:py-16">
-      <div className="px-8 lg:pr-16 lg:pl-4  py-4 space-y-6 text-white lg:w-[55%] xl:w-[60%] lg:space-y-0">
+    <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse h-full lg:items-center lg:justify-end lg:py-0">
+      <div className="px-8 py-4 space-y-6 text-white lg:w-[65%] xl:w-[70%] lg:space-y-0">
         <h1 className="text-2xl font-bold lg:hidden">PROJECTS</h1>
         <img className="" src="./p5-1.png" alt="" />
         <h1 className="text-2xl font-bold text-red-500 lg:text-3xl xl:text-5xl lg:py-2 xl:py-6">
@@ -33,47 +33,46 @@ const Projects = () => {
           cum ad et, maxime laborum odit molestiae repudiandae consequatur ut
           voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit
           amet consectetur adipisicing elit. Doloribus, sapiente consequatur
-          corrupti voluptatibus eum dolore cupiditate repellat odio quis
-          laudantium.
+          corrupti. <br /> <a href="#">More details on the github repository.</a>
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 px-8 pt-4 pb-8 lg:grid-cols-1 lg:w-[20%] xl:gap-6 lg:gap-4">
+      <div className="grid grid-cols-3 gap-2 px-8 lg:grid-cols-1 lg:w-[22%] xl:gap-6 lg:gap-4">
         <div className={elementStyles.projectCard}>
           <div className="flex flex-col text-center sm:text-left">
             <h1 className={elementStyles.projectCardHeading}>Project - 001</h1>
 
-            <p className="text-sm text-white sm:text-lg">Title</p>
+            <p className="text-sm text-white sm:text-base xl:text-lg">Title</p>
           </div>
         </div>
         <div className={elementStyles.projectCard}>
           <div className="flex flex-col text-center sm:text-left">
             <h1 className={elementStyles.projectCardHeading}>Project - 001</h1>
-            <p className="text-sm text-white sm:text-lg">Title</p>
+            <p className="text-sm text-white sm:text-base xl:text-lg">Title</p>
           </div>
         </div>
         <div className={elementStyles.projectCard}>
           <div className="flex flex-col text-center sm:text-left">
             <h1 className={elementStyles.projectCardHeading}>Project - 001</h1>
-            <p className="text-sm text-white sm:text-lg">Title</p>
+            <p className="text-sm text-white sm:text-base xl:text-lg">Title</p>
           </div>
         </div>
         <div className={elementStyles.projectCard}>
           <div className="flex flex-col text-center sm:text-left">
             <h1 className={elementStyles.projectCardHeading}>Project - 001</h1>
-            <p className="text-sm text-white sm:text-lg">Title</p>
+            <p className="text-sm text-white sm:text-base xl:text-lg">Title</p>
           </div>
         </div>
         <div className={elementStyles.projectCard}>
           <div className="flex flex-col text-center sm:text-left">
             <h1 className={elementStyles.projectCardHeading}>Project - 001</h1>
-            <p className="text-sm text-white sm:text-lg">Title</p>
+            <p className="text-sm text-white sm:text-base xl:text-lg">Title</p>
           </div>
         </div>
         <div className={elementStyles.projectCard}>
           <div className="flex flex-col text-center sm:text-left">
             <h1 className={elementStyles.projectCardHeading}>Project - 001</h1>
-            <p className="text-sm text-white sm:text-lg">Title</p>
+            <p className="text-sm text-white sm:text-base xl:text-lg">Title</p>
           </div>
         </div>
       </div>
