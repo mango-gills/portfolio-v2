@@ -35,3 +35,8 @@ body {
     transform: translateY(0);
   }
 }
+
+
+.hero-text{
+  text-shadow: -5px 5px 0px rgba(255, 49, 49,.8);
+}
