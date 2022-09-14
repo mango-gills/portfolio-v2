@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  @layer responsive{
+    .text-shadow-sm{
+      text-shadow:-2px 2px 0px rgba(255, 49, 49, .8);
+    }
+    .text-shadow-lg{
+    text-shadow: -5px 5px 0px rgba(255, 49, 49,.8);
+    }
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -37,6 +48,3 @@ body {
 }
 
 
-.hero-text{
-  text-shadow: -5px 5px 0px rgba(255, 49, 49,.8);
-}

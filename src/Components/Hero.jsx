@@ -13,8 +13,7 @@ const Hero = () => {
         variants={onDisplayVariant}
         initial="hidden"
         animate="display"
-        className="font-bold sm:text-7xl md:text-8xl text-white text-5xl lg:text-[6rem] xl:text-[8rem] mb-2 lg:mb-4 xl:mb-6 tracking-wider
-        hero-text"
+        className="font-bold sm:text-6xl md:text-8xl text-white text-[2.9rem] lg:text-[6rem] xl:text-[8rem] mb-2 lg:mb-4 xl:mb-6 tracking-wider text-shadow-sm lg:text-shadow-lg"
       >
         Hello World!
       </motion.h1>
