@@ -5,7 +5,7 @@ import { elementStyles } from "../styles";
 const Skills = () => {
   return (
     <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:ml-[100px] lg:justify-center h-full lg:h-screen text-white">
-      <div className="w-full space-y-4 text-white">
+      <div className="w-full space-y-2 lg:space-y-4 text-white">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Tech Stacks
         </h1>
@@ -18,14 +18,14 @@ const Skills = () => {
             {techStack.map((item, idx) => (
               <li
                 key={idx}
-                className="flex flex-col items-center mb-6 space-y-2 lg:space-y-4"
+                className="flex flex-col items-center mb-6 space-y-1 lg:space-y-2"
               >
                 <img
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}
                 />
-                <p className="text-xs md:text-sm">{item.name}</p>
+                <p className="text-xs md:text-sm xl:text-base">{item.name}</p>
               </li>
             ))}
           </ul>
@@ -33,7 +33,8 @@ const Skills = () => {
       </div>
 
       {/*  */}
-      <div className="w-full space-y-4 xl:mt-8 lg:mt-2">
+      <div className="w-full space-y-2 lg:space-y-4 xl:mt-8 lg:mt-2">
+        
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
