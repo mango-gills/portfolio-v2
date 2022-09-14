@@ -13,9 +13,9 @@ const Hero = () => {
         variants={onDisplayVariant}
         initial="hidden"
         animate="display"
-        className="font-bold sm:text-7xl md:text-8xl text-white text-5xl lg:text-[6.5rem] xl:text-[9.8rem] my-12 xl:my-10"
+        className="font-bold sm:text-7xl md:text-8xl text-white text-5xl lg:text-[6rem] xl:text-[8rem] my-12 xl:my-10 tracking-wider"
       >
-        Hi, I'm Titan
+        Hello World!
       </motion.h1>
       <motion.div
         variants={onDisplayVariant}
@@ -23,15 +23,17 @@ const Hero = () => {
         animate="display"
         className=" lg:text-[2rem] font-extralight tracking-widest text-white"
       >
-        <h2 className="text-3xl font-medium md:text-4xl sm:text-4xl xl:text-5xl">
+        {/* <h2 className="text-3xl font-medium md:text-3xl sm:text-2xl xl:text-3xl">
           Hello there!
-        </h2>
-        <p className="lg:w-[700px] xl:w-[950px] lg:leading-snug xl:leading-normal my-10 sm:text-lg md:text-xl xl:text-3xl">
-          My name is Mark Encinares, aiming to be a Full Stack Web Developer, I
-          can make fast and responsive web pages.
-        </p>
-        <p className="mt-14 text-xl xl:text-3xl">
-          Let's build something great!{" "}
+        </h2> */}
+        <div className="lg:w-[500px] xl:w-[700px] lg:leading-snug xl:leading-normal my-6 sm:text-lg md:text-xl xl:text-2xl">
+          <p>
+          My name is Mark Encinares, aiming to be a Full Stack Web Developer, I make fast and responsive web pages.
+          </p>
+          
+          <p className="mt-4">Let's build something great!</p>
+        </div>
+        <p className="mt-6 text-xl xl:text-2xl">
           <span className="font-semibold text-red-500 border-b-2 border-white/50">
             Contact me here
           </span>
