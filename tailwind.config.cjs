@@ -21,7 +21,13 @@ module.exports = {
       "2xl": "2560px",
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      colors:{
+        vividRed:{
+          900: '#FF3131',
+        }
+      }
+    },
   },
   plugins: [],
 };
