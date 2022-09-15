@@ -5,11 +5,13 @@ import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
+import AnimatePage from "../AnimatePages";
 
 const Home = () => {
   return (
     <div className="bg-[#161617] relative w-full h-screen">
       <Navbar />
+      <AnimatePage>
       <div className="lg:ml-[20%] lg:absolute xl:ml-[18%] lg:inset-0">
         <Hero />
         <div className="lg:hidden">
@@ -19,6 +21,7 @@ const Home = () => {
           <Footer />
         </div>
       </div>
+    </AnimatePage>
     </div>
   );
 };
