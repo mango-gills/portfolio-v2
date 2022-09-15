@@ -3,9 +3,9 @@ import { elementStyles } from "../styles";
 import mainBg from '../assets/main-bg.jpg'
 const Contact = () => {
   return (
-    <div className="bg-no-repeat bg-cover bg-[#161617] w-full h-full"
+    <div className="bg-no-repeat bg-cover bg-[#161617] w-full h-full flex justify-center lg:justify-start lg:pl-24 items-center"
     style={{ backgroundImage: `url(${mainBg})` }}>
-      <div className=" text-white px-8 lg:pt-10 lg:pb-2 py-12 lg:w-[70%] xl:pt-24 lg:pl-14">
+      <div className=" text-white px-8 py-12 lg:py-0 lg:w-[70%] xl:w-[62%]">
     
       <h1 className="text-3xl font-bold lg:text-5xl lg:mb-8 xl:text-7xl xl:mb-10">Get in touch</h1>
       <p className="my-2 text-red-500 xl:text-xl">@: markencinares@gmail.com</p>
@@ -33,7 +33,7 @@ const Contact = () => {
           id=""
           cols="30"
           rows="10"
-          className={`${elementStyles.inputStyle} xl:h-[400px] font-light`}
+          className={`${elementStyles.inputStyle} xl:h-[380px] font-light`}
           placeholder="message"
         ></textarea>
         <button className="px-4 py-2 lg:px-6 lg:py-4 text-sm font-bold xl:text-xl text-red-500 bg-transparent border-2 border-red-500 rounded-sm">
