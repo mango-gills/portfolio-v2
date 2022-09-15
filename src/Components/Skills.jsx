@@ -4,12 +4,12 @@ import { elementStyles } from "../styles";
 
 const Skills = () => {
   return (
-    <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:pl-32 lg:justify-center h-full lg:min-h-screen text-white">
+    <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:pl-24 xl:pl-32 lg:justify-center h-full lg:min-h-screen text-white">
       <div className="w-full space-y-2 lg:space-y-4 text-white">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Tech Stacks
         </h1>
-        <p className="text-base sm:text-lg xl:text-xl">
+        <p className="text-base sm:text-lg xl:text-2xl">
           Working knowledge on the following web development languages,
           frameworks, libraries and platforms.
         </p>
@@ -38,7 +38,7 @@ const Skills = () => {
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
-        <p className="text-base sm:text-lg xl:text-xl">
+        <p className="text-base sm:text-lg xl:text-2xl">
           These are the tools that I use for web development.
         </p>
         <div>

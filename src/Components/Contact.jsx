@@ -3,7 +3,7 @@ import { elementStyles } from "../styles";
 import mainBg from '../assets/main-bg.jpg'
 const Contact = () => {
   return (
-    <div className="bg-no-repeat bg-cover bg-[#161617] w-full h-full flex justify-center lg:justify-start lg:pl-24 items-center"
+    <div className="bg-no-repeat bg-cover bg-[#161617] w-full h-full flex justify-center lg:justify-start lg:pl-16 xl:pl-24 items-center"
     style={{ backgroundImage: `url(${mainBg})` }}>
       <div className=" text-white px-8 py-12 lg:py-0 lg:w-[70%] xl:w-[62%]">
     
