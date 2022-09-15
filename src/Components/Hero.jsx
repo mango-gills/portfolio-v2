@@ -28,9 +28,10 @@ const Hero = () => {
         </h2> */}
         <div className="w-[290px] lg:w-[500px] xl:w-[700px] lg:leading-snug xl:leading-normal my-6 sm:text-lg text-xs md:text-xl xl:text-2xl">
           <p>
-          My name is Mark Encinares, aiming to be a Full Stack Web Developer, I make fast and responsive web pages.
+            My name is Mark Encinares, aiming to be a Full Stack Web Developer,
+            I make fast and responsive web pages.
           </p>
-          
+
           <p className="mt-8">Let's build something great!</p>
         </div>
         <p className="mt-14 xl:mt-20 text-xs lg:text-xl xl:text-2xl">
