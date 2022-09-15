@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -5,6 +6,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+
 
 import ContactPage from "./Pages/ContactPage";
 import Home from "./Pages/Home";
@@ -14,7 +16,7 @@ import SkillsAndTools from "./Pages/SkillsAndTools";
 
 const App = () => {
   return (
-    <div>
+    <AnimatePresence exitBeforeEnter>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,7 +27,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
-    </div>
+    </AnimatePresence>
   );
 };
 

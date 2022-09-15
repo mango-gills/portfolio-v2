@@ -33,7 +33,7 @@ const Contact = () => {
           id=""
           cols="30"
           rows="10"
-          className={`${elementStyles.inputStyle} xl:h-[380px] font-light`}
+          className={`${elementStyles.inputStyle} xl:h-[30%] font-light`}
           placeholder="message"
         ></textarea>
         <button className="px-4 py-2 lg:px-6 lg:py-4 text-sm font-bold xl:text-xl text-red-500 bg-transparent border-2 border-red-500 rounded-sm">

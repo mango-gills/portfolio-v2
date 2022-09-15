@@ -73,41 +73,24 @@ const Navbar = () => {
             <li className="flex items-center ">
               <AiFillGithub size={30} className="text-white" />
 
-              <p className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
+              <a href="https://github.com/mango-gills" target="_blank" className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
                 Github
-              </p>
+              </a>
             </li>
             <li className="flex items-center">
               <AiOutlineGitlab size={30} className="text-white" />
-              <p className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
+              <a href="https://gitlab.com/muk21" target="_blank" className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
                 Gitlab
-              </p>
+              </a>
             </li>
             <li className="flex items-center">
               <AiFillLinkedin size={30} className="text-white" />
-              <p className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
+              <a href="https://www.linkedin.com/in/mcge/" target="_blank" className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
                 LinkedIn
-              </p>
+              </a>
             </li>
           </ul>
-        </div>
-        {/* 
-        <div className="w-full overflow-y-clip px-4 py-4 xl:px-8 xl:py-4 mt-6 xl:mt-12 lg:space-y-2 xl:space-y-2 text-center  text-white border-2 border-gray-500 rounded-md">
-          <h1 className="text-base xl:text-lg font-semibold tracking-widest text-red-500">
-            Click to view joke of the Day!
-          </h1>
-          <p className="hidden lg:block xl:text-base lg:text-xs">
-            I used to visit a casino, until I found out their top floor
-            restaurant served beef.
-          </p>
-          <p className="hidden lg:block italic font-medium xl:text-base lg:text-xs">
-            That meant the steaks were just too high for me.
-          </p>
-        </div> */}
-
-        {/* <div className="relative w-16 mt-8 lg:mt-6 xl:mt-12 bg-gray-500 rounded-full">
-          <FaSun className="w-8 h-8 p-1 bg-white rounded-full" />
-        </div> */}
+        </div>       
       </div>
 
       {/* Mobile Navigation */}
