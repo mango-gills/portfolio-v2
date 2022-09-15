@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { slideInMenu, animateLinks, item } from "../motionVariants";
 import { AiOutlineGitlab, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import avatarIMG from '../assets/defmhr4-fullview.jpg'
+import avatarIMG from "../assets/defmhr4-fullview.jpg";
 
 const Navbar = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -41,9 +41,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden lg:flex lg:flex-col lg:justify-center bg-[#1F1F1F] lg:w-[20%] xl:w-[18%] w-[400px] h-screen absolute border-r-2 border-vividRed-900 px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
-        <div className="top-nav bg-white w-full h-1/4 rounded-sm bg-cover bg-left bg-no-repeat"
-        style={{ backgroundImage: `url(${avatarIMG})` }} >
+      <div className="hidden lg:flex lg:flex-col lg:justify-center bg-[#1F1F1F] lg:w-[20%] xl:w-[18%] w-[400px] min-h-screen border-r-2 border-vividRed-900 px-12 lg:px-8 py-12 lg:py-6 xl:px-12 xl:py-12">
+        {/* <div
+          className="top-nav bg-white w-full h-56 aspect-square overflow-hidden rounded-sm bg-cover bg-left bg-no-repeat"
+          style={{ backgroundImage: `url(${avatarIMG})` }}
+
+        > */}
+        <div className="h-56 w-full overflow-hidden rounded-sm flex">
+          <img src={avatarIMG} alt="avatar" className="w-full h-full object-cover" />
         </div>
 
         <div className="bottom-nav">
@@ -73,24 +78,36 @@ const Navbar = () => {
             <li className="flex items-center ">
               <AiFillGithub size={30} className="text-white" />
 
-              <a href="https://github.com/mango-gills" target="_blank" className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
+              <a
+                href="https://github.com/mango-gills"
+                target="_blank"
+                className="ml-2 xl:ml-4 xl:text-xl text-lg text-white"
+              >
                 Github
               </a>
             </li>
             <li className="flex items-center">
               <AiOutlineGitlab size={30} className="text-white" />
-              <a href="https://gitlab.com/muk21" target="_blank" className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
+              <a
+                href="https://gitlab.com/muk21"
+                target="_blank"
+                className="ml-2 xl:ml-4 xl:text-xl text-lg text-white"
+              >
                 Gitlab
               </a>
             </li>
             <li className="flex items-center">
               <AiFillLinkedin size={30} className="text-white" />
-              <a href="https://www.linkedin.com/in/mcge/" target="_blank" className="ml-2 xl:ml-4 xl:text-xl text-lg text-white">
+              <a
+                href="https://www.linkedin.com/in/mcge/"
+                target="_blank"
+                className="ml-2 xl:ml-4 xl:text-xl text-lg text-white"
+              >
                 LinkedIn
               </a>
             </li>
           </ul>
-        </div>       
+        </div>
       </div>
 
       {/* Mobile Navigation */}

@@ -4,7 +4,7 @@ import { elementStyles } from "../styles";
 
 const Skills = () => {
   return (
-    <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:ml-[100px] lg:justify-center h-full lg:h-screen text-white">
+    <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:pl-32 lg:justify-center h-full lg:min-h-screen text-white">
       <div className="w-full space-y-2 lg:space-y-4 text-white">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Tech Stacks

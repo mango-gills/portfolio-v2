@@ -5,12 +5,12 @@ import AnimatePage from "../AnimatePages";
 
 const ProjectsPage = () => {
   return (
-    <div className="bg-[#161617] w-full h-full">
+    <div className="bg-[#161617] relative w-full min-h-screen">
       <Navbar />
       <AnimatePage>
-      <div className="lg:ml-[22%] xl:ml-[20%] h-full lg:h-screen">
-        <Projects />
-      </div>
+        <div className="lg:ml-[16%] xl:ml-[18%] h-full lg:min-h-screen lg:absolute lg:inset-0">
+          <Projects />
+        </div>
       </AnimatePage>
     </div>
   );
