@@ -111,7 +111,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="fixed flex items-center justify-between w-full px-6 py-4 text-white border-b-2 border-vividRed-900 lg:hidden bg-[#08060c] z-1">
+      <div className="fixed flex items-center justify-between w-full px-6 py-4 text-white border-b-2 border-vividRed-900 lg:hidden bg-[#08060c] z-10">
         <Link to={"/"} className="cursor-pointer select-none">
           <h1 className="text-2xl font-bold tracking-widest text-white sm:text-3xl">
             Mango Devs

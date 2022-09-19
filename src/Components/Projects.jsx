@@ -3,9 +3,6 @@ import { elementStyles } from "../styles";
 import { projects } from "../projectsData";
 
 const Projects = () => {
-
-  console.log(projects)
-
   return (
     <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse h-full lg:min-h-screen lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28">
       <div className="px-8 py-4 space-y-6 text-white lg:w-[65%] xl:w-[60%] lg:space-y-0">
@@ -37,20 +34,23 @@ const Projects = () => {
           cum ad et, maxime laborum odit molestiae repudiandae consequatur ut
           voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit
           amet consectetur adipisicing elit. Doloribus, sapiente consequatur
-          corrupti. <br /> <a href="#">More details on the github repository.</a>
+          corrupti. <br />{" "}
+          <a href="#">More details on the github repository.</a>
         </p>
       </div>
 
       <ul className="grid grid-cols-3 gap-2 px-8 lg:px-4 lg:grid-cols-1 lg:w-[20%] xl:gap-6 lg:gap-3">
-     {projects.map((data, index) => (
-         <li className={elementStyles.projectCard}>
-         <div className="flex flex-col text-center sm:text-left">
-           <h1 className={elementStyles.projectCardHeading}>{data.title}</h1>
+        {projects.map((data, index) => (
+          <li key={index} className={elementStyles.projectCard}>
+            <div className="flex flex-col text-center sm:text-left">
+              <h1 className={elementStyles.projectCardHeading}>{data.title}</h1>
 
-           <p className="text-sm text-white sm:text-sm xl:text-lg">Project - {data.id}</p>
-         </div>
-       </li>
-     ))}
+              <p className="text-sm text-white sm:text-sm xl:text-lg">
+                Project - {data.id}
+              </p>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );
