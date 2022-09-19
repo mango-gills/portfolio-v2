@@ -65,6 +65,8 @@ if (!isSmall) {
       y: 0,
       transition: {
         delay: 1.2,
+        type: "spring",
+        stiffness: 500,
       },
     },
   };
@@ -79,6 +81,8 @@ if (!isSmall) {
       y: 0,
       transition: {
         delay: 1.2,
+        type: "spring",
+        stiffness: 500,
       },
     },
   };
