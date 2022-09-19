@@ -1,9 +1,9 @@
 export const onDisplayVariant = {
-  hidden: {
+  hide: {
     opacity: 0,
     x: -100,
   },
-  display: {
+  show: {
     x: 0,
     opacity: 1,
     transition: {
@@ -50,4 +50,36 @@ export const item = {
   exit: { x: -100, opacity: 0 },
 };
 
+export let animateShadow = {};
 
+const isSmall = window.innerWidth < 1280;
+
+if (!isSmall) {
+  animateShadow = {
+    hide: {
+      x: ".32rem",
+      y: "-.34rem",
+    },
+    show: {
+      x: 0,
+      y: 0,
+      transition: {
+        delay: 1.2,
+      },
+    },
+  };
+} else {
+  animateShadow = {
+    hide: {
+      x: ".15rem",
+      y: "-.15rem",
+    },
+    show: {
+      x: 0,
+      y: 0,
+      transition: {
+        delay: 1.2,
+      },
+    },
+  };
+}
