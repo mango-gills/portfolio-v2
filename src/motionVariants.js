@@ -1,9 +1,9 @@
 export const onDisplayVariant = {
-  hide: {
+  init: {
     opacity: 0,
     x: -100,
   },
-  show: {
+  active: {
     x: 0,
     opacity: 1,
     transition: {
@@ -14,11 +14,11 @@ export const onDisplayVariant = {
 };
 
 export const slideInMenu = {
-  hide: {
+  init: {
     x: "100vw",
     opacity: 0,
   },
-  show: {
+  active: {
     x: 0,
     opacity: 1,
     transition: {
@@ -32,10 +32,10 @@ export const slideInMenu = {
 };
 
 export const animateLinks = {
-  hide: {
+  init: {
     opacity: 0,
   },
-  show: {
+  active: {
     opacity: 1,
     transition: {
       delayChildren: 0.1,
@@ -45,8 +45,8 @@ export const animateLinks = {
 };
 
 export const item = {
-  hide: { x: -100, opacity: 0 },
-  show: { x: 0, opacity: 1 },
+  init: { x: -100, opacity: 0 },
+  active: { x: 0, opacity: 1 },
   exit: { x: -100, opacity: 0 },
 };
 
@@ -56,27 +56,27 @@ const isSmall = window.innerWidth < 1280;
 
 if (!isSmall) {
   animateShadow = {
-    hide: {
+    init: {
       x: ".32rem",
       y: "-.34rem",
     },
-    show: {
+    active: {
       x: 0,
       y: 0,
       transition: {
-        delay: 1.2,
+        delay: 1,
         type: "spring",
-        stiffness: 500,
+        stiffness: 600,
       },
     },
   };
 } else {
   animateShadow = {
-    hide: {
+    init: {
       x: ".15rem",
       y: "-.15rem",
     },
-    show: {
+    active: {
       x: 0,
       y: 0,
       transition: {
@@ -89,8 +89,38 @@ if (!isSmall) {
 }
 
 export const scaleOnHover = {
+  init: {
+    scale: 0,
+    rotate: -360,
+  },
+  active: {
+    scale: 1,
+    rotate: 0,
+    transition: {
+      rotate: {
+        duration: 0.6,
+      },
+    },
+  },
   hover: {
-    scale: 0.7,
+    scale: 0.5,
     rotate: -45,
+  },
+};
+
+export const revealText = {
+  init: {
+    x: -100,
+    opacity: 0,
+  },
+  active: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 160,
+      duration: 0.8,
+      delay: 0.6,
+    },
   },
 };
