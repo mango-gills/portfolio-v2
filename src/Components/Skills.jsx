@@ -2,12 +2,12 @@ import React from "react";
 import { techStack, toolsStack } from "../assets";
 import { elementStyles } from "../styles";
 import { motion } from "framer-motion";
-import { scaleOnHover } from "../motionVariants";
+import { scaleOnHover, revealText } from "../motionVariants";
 
 const Skills = () => {
   return (
     <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:pl-24 xl:pl-32 lg:justify-center h-full lg:min-h-screen text-white">
-      <div className="w-full space-y-2 lg:space-y-4 text-white">
+      <div className="w-full space-y-2 lg:space-y-4 text-white select-none">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Tech Stacks
         </h1>
@@ -16,7 +16,7 @@ const Skills = () => {
           frameworks, libraries and platforms.
         </p>
         <div>
-          <ul className="grid justify-center grid-cols-5 gap-2 mt-8 mb-4 lg:justify-start sm:grid-cols-5 lg:my-6 lg:flex lg:space-x-8 xl:space-x-10">
+          <ul className="grid justify-center grid-cols-5 gap-2 mt-8 mb-4 lg:justify-start sm:grid-cols-5 lg:my-6 lg:flex lg:space-x-8 xl:space-x-10 overflow-hidden">
             {techStack.map((item, idx) => (
               <li
                 key={idx}
@@ -24,12 +24,21 @@ const Skills = () => {
               >
                 <motion.img
                   variants={scaleOnHover}
+                  initial="init"
+                  animate="active"
                   whileHover="hover"
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}
                 />
-                <p className="text-xs md:text-sm xl:text-base">{item.name}</p>
+                <motion.p
+                  variants={revealText}
+                  initial="init"
+                  animate="active"
+                  className="text-xs md:text-sm xl:text-base"
+                >
+                  {item.name}
+                </motion.p>
               </li>
             ))}
           </ul>
@@ -37,7 +46,7 @@ const Skills = () => {
       </div>
 
       {/*  */}
-      <div className="w-full space-y-2 lg:space-y-4 xl:mt-8 lg:mt-2">
+      <div className="w-full space-y-2 lg:space-y-4 xl:mt-8 lg:mt-2 select-none">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
@@ -53,12 +62,21 @@ const Skills = () => {
               >
                 <motion.img
                   variants={scaleOnHover}
+                  initial="init"
+                  animate="active"
                   whileHover="hover"
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}
                 />
-                <p className="text-xs md:text-sm">{item.name}</p>
+                <motion.p
+                  variants={revealText}
+                  initial="init"
+                  animate="active"
+                  className="text-xs md:text-sm"
+                >
+                  {item.name}
+                </motion.p>
               </li>
             ))}
           </ul>

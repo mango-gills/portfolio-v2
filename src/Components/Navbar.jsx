@@ -48,7 +48,11 @@ const Navbar = () => {
 
         > */}
         <div className="lg:h-48 xl:h-56 w-full overflow-hidden rounded-sm flex">
-          <img src={avatarIMG} alt="avatar" className="w-full h-full object-cover" />
+          <img
+            src={avatarIMG}
+            alt="avatar"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="bottom-nav">
@@ -145,15 +149,15 @@ const Navbar = () => {
           {navIsOpen && (
             <motion.div
               variants={slideInMenu}
-              initial="hide"
-              animate="show"
+              initial="init"
+              animate="active"
               exit="exit"
               className="absolute top-0 left-0 flex w-full h-screen p-10 font-semibold text-white bg-[#08060c] z-10 items-center justify-center"
             >
               <motion.ul
                 variants={animateLinks}
-                initial="hide"
-                animate="show"
+                initial="init"
+                animate="active"
                 className="space-y-6 text-3xl font-semibold animate-links "
               >
                 <AnimatePresence>

@@ -11,8 +11,8 @@ const Hero = () => {
     >
       <motion.div
         variants={onDisplayVariant}
-        initial="hide"
-        animate="show"
+        initial="init"
+        animate="active"
         className="relative"
       >
         <h1 className="font-bold sm:text-6xl md:text-8xl text-white text-[2.6rem] lg:text-[6rem] xl:text-[8rem] mb-2 lg:mb-4 xl:mb-6 tracking-wider relative z-[2]">
@@ -21,8 +21,6 @@ const Hero = () => {
 
         <motion.h1
           variants={animateShadow}
-          initial="hide"
-          animate="show"
           className="font-bold sm:text-6xl md:text-8xl text-vividRed-900/80 z-[1] text-[2.6rem] lg:text-[6rem] xl:text-[8rem] mb-2 lg:mb-4 xl:mb-6 tracking-wider absolute -left-[.15rem] top-[.15rem] md:-left-[.2rem] md:top-[.2rem] lg:-left-[.32rem] lg:top-[.35rem]"
         >
           Hello World!
@@ -30,13 +28,10 @@ const Hero = () => {
       </motion.div>
       <motion.div
         variants={onDisplayVariant}
-        initial="hide"
-        animate="show"
+        initial="init"
+        animate="active"
         className=" lg:text-[2rem] font-extralight tracking-widest text-white"
       >
-        {/* <h2 className="text-3xl font-medium md:text-3xl sm:text-2xl xl:text-3xl">
-          Hello there!
-        </h2> */}
         <div className="w-full lg:w-[500px] xl:w-[700px] lg:leading-snug xl:leading-normal my-6 sm:text-lg text-xs md:text-xl xl:text-2xl">
           <p>
             My name is Mark Encinares, aiming to be a Full Stack Web Developer,
