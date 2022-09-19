@@ -1,6 +1,8 @@
 import React from "react";
 import { techStack, toolsStack } from "../assets";
 import { elementStyles } from "../styles";
+import { motion } from "framer-motion";
+import { scaleOnHover } from "../motionVariants";
 
 const Skills = () => {
   return (
@@ -20,7 +22,9 @@ const Skills = () => {
                 key={idx}
                 className="flex flex-col items-center mb-6 space-y-1 lg:space-y-2"
               >
-                <img
+                <motion.img
+                  variants={scaleOnHover}
+                  whileHover="hover"
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}
@@ -34,7 +38,6 @@ const Skills = () => {
 
       {/*  */}
       <div className="w-full space-y-2 lg:space-y-4 xl:mt-8 lg:mt-2">
-        
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
@@ -48,7 +51,9 @@ const Skills = () => {
                 key={idx}
                 className="flex flex-col items-center mb-6 space-y-2 lg:space-y-4"
               >
-                <img
+                <motion.img
+                  variants={scaleOnHover}
+                  whileHover="hover"
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}

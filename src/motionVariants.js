@@ -87,3 +87,10 @@ if (!isSmall) {
     },
   };
 }
+
+export const scaleOnHover = {
+  hover: {
+    scale: 0.7,
+    rotate: -45,
+  },
+};
