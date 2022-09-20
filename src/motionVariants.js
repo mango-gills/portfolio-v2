@@ -93,7 +93,7 @@ export const scaleOnHover = {
     scale: 0,
   },
   active: {
-    scale: [1, 1.4, 1.4, 1],
+    scale: [1, 1.2, 1.2, 1],
     borderRadius: ["20%", "50%", "50%", "20%"],
     rotate: [0, 270, 270, 0],
     transition: {
@@ -110,7 +110,7 @@ export const scaleOnHover = {
 
 export const revealText = {
   init: {
-    x: -100,
+    x: -80,
     opacity: 0,
   },
   active: {
