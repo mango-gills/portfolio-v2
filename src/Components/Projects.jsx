@@ -78,7 +78,7 @@ const Projects = () => {
             className={elementStyles.projectCard}
             onClick={() => handleData(data)}
           >
-            <div className="flex flex-col text-center sm:text-left">
+            <div className="flex flex-col text-left">
               <h1 className={elementStyles.projectCardHeading}>{data.title}</h1>
 
               <p className="text-sm text-white sm:text-sm xl:text-lg">
