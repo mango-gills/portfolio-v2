@@ -1,6 +1,6 @@
 export const projects = [
   {
-    images: ["1", "2"],
+    images: ["./p2-1.png", "./p2-2.png"],
     id: "001",
     title: "JS Game",
     stack: ["HTML", "CSS", "JavaScript"],
@@ -12,7 +12,7 @@ export const projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
   },
   {
-    images: ["1", "2"],
+    images: ["./p3-1.png", "./p3-1.png"],
     id: "002",
     title: "Shappy",
     stack: ["ReactJS", "Tailwind", "FakeStoreAPI"],
@@ -24,7 +24,7 @@ export const projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
   },
   {
-    images: ["1", "2"],
+    images: ["./p4-1.png", "./p4-1.png"],
     id: "003",
     title: "foodStreet",
     stack: ["ReactJS", "NodeJS", "Express", "MongoDB"],
@@ -36,7 +36,7 @@ export const projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
   },
   {
-    images: ["1", "2"],
+    images: ["./p5-1.png", "./p5-2.png"],
     id: "004",
     title: "CHAPP",
     stack: ["ReactJS", "Firebase"],
