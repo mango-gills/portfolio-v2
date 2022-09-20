@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import mainBg from "../assets/main-bg.jpg";
+import mainBg from "../assets/main-bg.webp";
 import { motion } from "framer-motion";
 import { onDisplayVariant, animateShadow } from "../motionVariants";
 

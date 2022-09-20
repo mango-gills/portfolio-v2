@@ -1,6 +1,6 @@
 export const projects = [
   {
-    images: ["./p2-1.png", "./p2-2.png"],
+    images: ["./p2-1.webp", "./p2-2.webp"],
     id: "001",
     title: "JS Game",
     stack: ["HTML", "CSS", "JavaScript"],
@@ -12,7 +12,7 @@ export const projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
   },
   {
-    images: ["./p3-1.png", "./p3-1.png"],
+    images: ["./p3-1.webp", "./p3-1.webp"],
     id: "002",
     title: "Shappy",
     stack: ["ReactJS", "Tailwind", "FakeStoreAPI"],
@@ -24,7 +24,7 @@ export const projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
   },
   {
-    images: ["./p4-1.png", "./p4-1.png"],
+    images: ["./p4-1.webp", "./p4-1.webp"],
     id: "003",
     title: "foodStreet",
     stack: ["ReactJS", "NodeJS", "Express", "MongoDB"],
@@ -36,7 +36,7 @@ export const projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
   },
   {
-    images: ["./p5-1.png", "./p5-2.png"],
+    images: ["./p5-1.webp", "./p5-2.webp"],
     id: "004",
     title: "CHAPP",
     stack: ["ReactJS", "Firebase"],
