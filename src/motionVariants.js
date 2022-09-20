@@ -91,20 +91,20 @@ if (!isSmall) {
 export const scaleOnHover = {
   init: {
     scale: 0,
-    rotate: -360,
   },
   active: {
-    scale: 1,
-    rotate: 0,
+    scale: [1, 1.4, 1.4, 1],
+    borderRadius: ["20%", "50%", "50%", "20%"],
+    rotate: [0, 270, 270, 0],
     transition: {
       rotate: {
-        duration: 0.6,
+        duration: 1,
       },
     },
   },
   hover: {
     scale: 0.5,
-    rotate: -45,
+    rotate: 45,
   },
 };
 
@@ -119,8 +119,8 @@ export const revealText = {
     transition: {
       type: "spring",
       stiffness: 160,
-      duration: 0.8,
-      delay: 0.6,
+      duration: 1,
+      delay: 1,
     },
   },
 };
