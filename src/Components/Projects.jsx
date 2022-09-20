@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { elementStyles } from "../styles";
 import { projects } from "../projectsData";
+import { motion, useAnimation } from "framer-motion";
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
+  const [activeCard, setActiveCard] = useState();
+  const control = useAnimation();
 
   const handleData = (data) => {
     setProject(data);
+    setActiveCard(data.id);
   };
 
   return (
@@ -73,19 +77,32 @@ const Projects = () => {
 
       <ul className="grid grid-cols-3 gap-2 px-8 lg:px-4 lg:grid-cols-1 lg:w-[20%] xl:gap-6 lg:gap-3">
         {projects.map((data, index) => (
-          <li
+          <motion.li
+            animate={control}
             key={index}
-            className={elementStyles.projectCard}
+            className={
+              activeCard === data.id
+                ? elementStyles.projectCardActive
+                : elementStyles.projectCard
+            }
             onClick={() => handleData(data)}
           >
             <div className="flex flex-col text-left">
-              <h1 className={elementStyles.projectCardHeading}>{data.title}</h1>
+              <h1
+                className={
+                  activeCard === data.id
+                    ? elementStyles.projectCardHeadingActive
+                    : elementStyles.projectCardHeading
+                }
+              >
+                {data.title}
+              </h1>
 
-              <p className="text-sm text-white sm:text-sm xl:text-lg">
+              <p className="text-sm sm:text-sm xl:text-lg">
                 Project - {data.id}
               </p>
             </div>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </div>
