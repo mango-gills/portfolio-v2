@@ -16,7 +16,7 @@ const Skills = () => {
           frameworks, libraries and platforms.
         </p>
         <div>
-          <ul className="grid justify-center grid-cols-5 gap-2 mt-8 mb-4 lg:justify-start sm:grid-cols-5 lg:my-6 lg:flex lg:space-x-8 xl:space-x-10 overflow-hidden">
+          <ul className="grid justify-center grid-cols-5 gap-2 mt-8 mb-4 lg:justify-start sm:grid-cols-5 lg:my-6 lg:flex lg:space-x-8 xl:space-x-10">
             {techStack.map((item, idx) => (
               <li
                 key={idx}
