@@ -14,7 +14,7 @@ const Projects = () => {
       <div className="px-8 py-4 space-y-6 text-white lg:w-[65%] xl:w-[60%] lg:space-y-0">
         <h1 className="text-2xl font-bold lg:hidden">PROJECTS</h1>
         <div
-          className="w-full h-[300px] lg:h-[280px] xl:h-[410px] overflow-hidden drop-shadow-lg relative bg-contain bg-no-repeat lg:bg-cover bg-top"
+          className="w-full h-[220px] md:h-[300px] lg:h-[280px] xl:h-[410px] overflow-hidden drop-shadow-lg relative bg-contain bg-no-repeat lg:bg-cover bg-top"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
         >
           {/* <img
