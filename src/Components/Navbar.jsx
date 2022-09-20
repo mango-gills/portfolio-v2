@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { slideInMenu, animateLinks, item } from "../motionVariants";
 import { AiOutlineGitlab, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import avatarIMG from "../assets/defmhr4-fullview.jpg";
+import avatarIMG from "../assets/defmhr4-fullview.webp";
 
 const Navbar = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
