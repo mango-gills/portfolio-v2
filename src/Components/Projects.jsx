@@ -66,12 +66,8 @@ const Projects = () => {
           </div>
         </div>
         <p className="text-sm lg:text-base xl:leading-10 xl:text-lg lg:leading-6 text-justify">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque
-          cum ad et, maxime laborum odit molestiae repudiandae consequatur ut
-          voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit
-          amet consectetur adipisicing elit. Doloribus, sapiente consequatur
-          corrupti. <br />{" "}
-          <a href="#">More details on the github repository.</a>
+          {project?.description}
+          <br /> <a href="#">More details on the github repository.</a>
         </p>
       </div>
 

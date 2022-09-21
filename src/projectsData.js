@@ -26,7 +26,7 @@ export const projects = [
   {
     images: ["./p4-1.webp", "./p4-1.webp"],
     id: "003",
-    title: "foodStreet",
+    title: "FoodStreet",
     stack: ["ReactJS", "NodeJS", "Express", "MongoDB"],
     links: {
       demo: "google.com/",
@@ -62,7 +62,7 @@ export const projects = [
   {
     images: ["1", "2"],
     id: "006",
-    title: "Chapp",
+    title: "Test",
     stack: ["ReactJS", "Firebase"],
     links: {
       demo: "google.com/",
