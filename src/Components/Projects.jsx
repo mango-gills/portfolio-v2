@@ -15,10 +15,10 @@ const Projects = () => {
 
   return (
     <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse h-full lg:min-h-screen lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28">
-      <div className="px-8 py-4 space-y-6 text-white lg:w-[65%] xl:w-[60%] lg:space-y-0">
+      <div className="px-8 py-4 space-y-4 text-white lg:w-[65%] xl:w-[60%] lg:space-y-0">
         <h1 className="text-2xl font-bold lg:hidden">PROJECTS</h1>
         <div
-          className="w-full h-[220px] md:h-[300px] lg:h-[280px] xl:h-[410px] overflow-hidden drop-shadow-lg relative bg-contain bg-no-repeat lg:bg-cover bg-top"
+          className="w-full h-[220px] md:h-[300px] lg:h-[305px] xl:h-[415px] overflow-hidden drop-shadow-lg relative bg-contain bg-no-repeat lg:bg-cover bg-top"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
         >
           {/* <img
@@ -27,13 +27,13 @@ const Projects = () => {
             alt=""
           /> */}
         </div>
-        <h1 className="text-2xl font-bold text-vividRed-900 lg:text-3xl xl:text-5xl lg:py-2 xl:py-6">
+        <h1 className="text-2xl font-bold text-vividRed-900 lg:text-3xl xl:text-5xl lg:py-2 xl:py-8">
           {project?.title}
         </h1>
-        <div className="flex flex-col w-full lg:flex-row lg:justify-between lg:pb-2 xl:pb-4">
-          <div className="flex lg:flex-col lg:text-lg xl:text-2xl xl:space-y-2 space-x-2 lg:space-x-0">
+        <div className="flex flex-col w-full lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
+          <div className="flex lg:flex-col lg:text-lg xl:text-xl space-x-2 lg:space-x-0">
             <p>Tech Stack:</p>
-            <div className="flex space-x-2">
+            <div className="flex space-x-4">
               {project?.stack.map((list, idx) => {
                 return (
                   <p key={idx} className="text-vividRed-900">
@@ -43,7 +43,7 @@ const Projects = () => {
               })}
             </div>
           </div>
-          <div className="flex lg:flex-col lg:text-lg xl:text-2xl xl:space-y-2 space-x-2 lg:space-x-0">
+          <div className="flex lg:flex-col lg:text-lg xl:text-xl space-x-2 lg:space-x-0">
             <p>Links:</p>
             <div className="flex space-x-2">
               <a
