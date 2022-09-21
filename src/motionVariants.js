@@ -1,14 +1,30 @@
 export const onDisplayVariant = {
   init: {
     opacity: 0,
-    x: -100,
+    y: -300,
   },
   active: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
-      delay: 0.5,
-      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+export const revealChildren = {
+  init: {
+    opacity: 0,
+    y: 150,
+  },
+  active: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 20,
     },
   },
 };
@@ -64,7 +80,7 @@ if (!isSmall) {
       x: 0,
       y: 0,
       transition: {
-        delay: 1,
+        delay: 1.2,
         type: "spring",
         stiffness: 600,
       },
