@@ -20,9 +20,9 @@ const Hero = () => {
         className="hero-container"
       >
         <motion.div variants={revealChildren} className="relative">
-          <h1 className="font-bold sm:text-6xl md:text-8xl text-white text-[2.6rem] lg:text-[6rem] xl:text-[8rem] mb-2 lg:mb-4 xl:mb-6 tracking-wider relative z-[2]">
+          <motion.h1 className="font-bold sm:text-6xl md:text-8xl text-white text-[2.6rem] lg:text-[6rem] xl:text-[8rem] mb-2 lg:mb-4 xl:mb-6 tracking-wider relative z-[2]">
             Hello World!
-          </h1>
+          </motion.h1>
 
           <motion.h1
             variants={animateShadow}
@@ -34,9 +34,12 @@ const Hero = () => {
 
         <motion.div
           variants={revealChildren}
-          className="w-[95%] md:w-5/6 lg:mt-12 lg:w-3/4 xl:w-[54%] leading-loose md:leading-relaxed my-6 sm:text-lg text-xs md:text-xl xl:text-[1.4rem] text-white"
+          className="w-[95%] md:w-5/6 lg:mt-12 lg:w-3/4 xl:w-[54%] my-6 text-white"
         >
-          <p>
+          <h1 className="text-sm md:text-base lg:text-xl text-white/50 font-light md:mb-2">
+            About Me
+          </h1>
+          <p className="sm:text-lg text-xs md:text-xl xl:text-[1.4rem] leading-loose md:leading-relaxed">
             <span className="text-vividRed-900 text-2xl">&lt;</span> Hi there!
             My name is Mark Encinares, I am aiming to be a good Full Stack Web
             Developer but currently I am focusing more with technologies used
@@ -45,10 +48,10 @@ const Hero = () => {
             <span className="text-vividRed-900 text-2xl">&gt;</span>
           </p>
 
-          <p className="mt-4 lg:mt-8">
-            <span className="text-vividRed-900 text-xl">&#91; </span>
+          <p className="mt-4 lg:mt-8 text-xs lg:text-xl">
+            <span className="text-vividRed-900 text-xs lg:text-xl">&#91; </span>
             Let's build something great!
-            <span className="text-vividRed-900 text-xl"> &#93;</span>
+            <span className="text-vividRed-900 text-xs lg:text-xl"> &#93;</span>
           </p>
         </motion.div>
 
