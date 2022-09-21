@@ -24,7 +24,7 @@ export const revealChildren = {
     transition: {
       type: "spring",
       stiffness: 300,
-      damping: 20,
+      damping: 16,
     },
   },
 };
