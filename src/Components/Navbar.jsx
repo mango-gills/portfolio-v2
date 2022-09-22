@@ -55,7 +55,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="bottom-nav">
+        <div className="bottom-nav selection:bg-vividRed-900/80 selection:text-neutral-900">
           <Link to={"/"}>
             <h1 className="text-[2.2rem] font-bold tracking-widest text-white lg:mt-6 lg:text-[1.6rem] xl:text-[2rem]">
               Mango Devs
@@ -66,7 +66,7 @@ const Navbar = () => {
           </Link>
 
           <ul className="mt-6 space-y-2 text-xl text-white xl:mt-12 xl:space-y-4 xl:text-2xl">
-            <li>
+            <li className="">
               <Link to={"/skills"}>Skills & Tools</Link>
             </li>
             <li>

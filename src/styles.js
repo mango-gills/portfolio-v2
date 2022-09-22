@@ -6,7 +6,7 @@ export const elementStyles = {
   inputStyle:
     "w-full py-2 px-4 bg-transparent border-2 border-red-500 rounded-sm outline-transparent outline text-xs sm:text-sm xl:text-lg placeholder:font-medium font-light bg-[#1f1f1f] focus:placeholder:text-white/80 focus:placeholder:font-semibold caret-vividRed-900",
   projectCard:
-    "flex w-full h-16 xl:h-28 bg-[#3D3D3D] border-2 border-[#515151] shadow-black rounded-md sm:h-20 cursor-pointer items-center pl-4 xl:pl-8 text-white font-medium",
+    "flex w-full h-16 xl:h-28 bg-[#3D3D3D] border-2 border-[#515151] shadow-black rounded-md sm:h-20 cursor-pointer items-center pl-4 xl:pl-8 text-white font-medium selection:bg-white selection:text-vividRed-900 ",
   projectCardActive:
     "flex w-full h-16 xl:h-28 bg-white border-2 border-[#515151] shadow-black rounded-md sm:h-20 cursor-pointer items-center pl-4 xl:pl-8 text-red-500 font-bold",
   projectCardHeading:
