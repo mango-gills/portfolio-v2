@@ -47,7 +47,7 @@ const Navbar = () => {
           style={{ backgroundImage: `url(${avatarIMG})` }}
 
         > */}
-        <div className="flex w-full overflow-hidden rounded-sm lg:h-48 xl:h-56">
+        <div className="pointer-events-none flex w-full select-none overflow-hidden rounded-sm lg:h-48 xl:h-56">
           <img
             src={avatarIMG}
             alt="avatar"
