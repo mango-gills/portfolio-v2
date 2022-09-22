@@ -6,8 +6,8 @@ import { scaleOnHover, revealText } from "../motionVariants";
 
 const Skills = () => {
   return (
-    <div className="flex h-full flex-col items-start bg-[#161617] py-12 px-8 text-white lg:min-h-screen lg:justify-center lg:pl-24 xl:pl-32">
-      <div className="w-full select-none space-y-2 text-white lg:space-y-4">
+    <div className="flex h-full flex-col items-start bg-[#161617] py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center  lg:pl-24 xl:pl-32">
+      <div className="w-full space-y-2 text-white lg:space-y-4">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Tech Stacks
         </h1>
@@ -16,7 +16,7 @@ const Skills = () => {
           frameworks, libraries and platforms.
         </p>
         <div>
-          <ul className="mt-8 mb-4 grid grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
+          <ul className="mt-8 mb-4 grid select-none grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
             {techStack.map((item, idx) => (
               <li
                 key={idx}
@@ -46,7 +46,7 @@ const Skills = () => {
       </div>
 
       {/*  */}
-      <div className="w-full select-none space-y-2 lg:mt-2 lg:space-y-4 xl:mt-8">
+      <div className="w-full space-y-2 lg:mt-2 lg:space-y-4 xl:mt-8">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
@@ -54,7 +54,7 @@ const Skills = () => {
           These are the tools that I use for web development.
         </p>
         <div>
-          <ul className="mt-8 mb-4 grid grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
+          <ul className="mt-8 mb-4 grid select-none grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
             {toolsStack.map((item, idx) => (
               <li
                 key={idx}
