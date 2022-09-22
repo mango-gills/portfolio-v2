@@ -6,9 +6,9 @@ import { scaleOnHover, revealText } from "../motionVariants";
 
 const Skills = () => {
   return (
-    <div className="flex h-full flex-col items-start bg-[#161617] py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center  lg:pl-24 xl:pl-32">
+    <div className="bg[#161617] flex h-full flex-col items-start  py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center  lg:pl-24 xl:pl-32">
       <div className="w-full space-y-2 text-white lg:space-y-4">
-        <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
+        <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg sm:text-3xl xl:text-5xl">
           Tech Stacks
         </h1>
         <p className="text-base sm:text-lg xl:text-2xl">
@@ -47,7 +47,7 @@ const Skills = () => {
 
       {/*  */}
       <div className="w-full space-y-2 lg:mt-2 lg:space-y-4 xl:mt-8">
-        <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
+        <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
         <p className="text-base sm:text-lg xl:text-2xl">
@@ -84,14 +84,14 @@ const Skills = () => {
       </div>
 
       <div>
-        <h2 className="mt-2 mb-2 text-2xl font-bold xl:mb-5 xl:mt-10">
+        <h2 className="mt-2 mb-2 text-2xl font-bold drop-shadow-vividRed-lg xl:mb-5 xl:mt-10">
           Other Skills
         </h2>
         <ul className="flex flex-col space-y-2 text-base lg:flex-row lg:space-y-0 lg:space-x-4 lg:text-lg xl:text-xl">
           <li>Computer Troubleshooting and Repair</li>
-          <li className="hidden font-semibold text-red-500 lg:block">|</li>
+          <li className="hidden font-semibold text-vividRed-900 lg:block">|</li>
           <li>Digital Photo Manipulation</li>
-          <li className="hidden font-semibold text-red-500 lg:block">|</li>
+          <li className="hidden font-semibold text-vividRed-900 lg:block">|</li>
           <li>Basic Video Editing</li>
         </ul>
       </div>

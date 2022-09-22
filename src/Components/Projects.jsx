@@ -16,7 +16,9 @@ const Projects = () => {
   return (
     <div className="h-full bg-[#161617] pt-[20px] lg:flex lg:min-h-screen lg:flex-row-reverse lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28">
       <div className="space-y-4 px-8 py-4 text-white selection:bg-white selection:text-vividRed-900 lg:w-[65%]  lg:space-y-0 xl:w-[60%]">
-        <h1 className="text-2xl font-bold lg:hidden">PROJECTS</h1>
+        <h1 className="text-2xl font-bold drop-shadow-vividRed-lg lg:hidden">
+          PROJECTS
+        </h1>
         <div
           className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:h-[305px] lg:bg-cover xl:h-[415px]"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
@@ -27,7 +29,7 @@ const Projects = () => {
             alt=""
           /> */}
         </div>
-        <h1 className="text-2xl font-bold text-vividRed-900 lg:py-2 lg:text-3xl xl:py-8 xl:text-5xl">
+        <h1 className="text-2xl font-bold text-vividRed-900 drop-shadow-dark-lg lg:py-2 lg:text-3xl xl:py-8 xl:text-5xl">
           {project?.title}
         </h1>
         <div className="flex w-full flex-col lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
