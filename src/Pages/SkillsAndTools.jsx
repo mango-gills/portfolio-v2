@@ -5,10 +5,10 @@ import AnimatePage from "../AnimatePages";
 
 const SkillsAndTools = () => {
   return (
-    <div className="bg-[#161617] relative w-full min-h-screen">
+    <div className="relative min-h-screen w-full bg-[#161617]">
       <Navbar />
       <AnimatePage>
-        <div className="lg:ml-[20%] xl:ml-[18%] h-full lg:min-h-screen lg:absolute lg:inset-0">
+        <div className="h-full lg:absolute lg:inset-0 lg:ml-[20%] lg:min-h-screen xl:ml-[18%]">
           <Skills />
         </div>
       </AnimatePage>

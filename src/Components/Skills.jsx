@@ -6,8 +6,8 @@ import { scaleOnHover, revealText } from "../motionVariants";
 
 const Skills = () => {
   return (
-    <div className="bg-[#161617] py-12 flex flex-col items-start px-8 lg:pl-24 xl:pl-32 lg:justify-center h-full lg:min-h-screen text-white">
-      <div className="w-full space-y-2 lg:space-y-4 text-white select-none">
+    <div className="flex h-full flex-col items-start bg-[#161617] py-12 px-8 text-white lg:min-h-screen lg:justify-center lg:pl-24 xl:pl-32">
+      <div className="w-full select-none space-y-2 text-white lg:space-y-4">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Tech Stacks
         </h1>
@@ -16,11 +16,11 @@ const Skills = () => {
           frameworks, libraries and platforms.
         </p>
         <div>
-          <ul className="grid justify-center grid-cols-5 gap-2 mt-8 mb-4 lg:justify-start sm:grid-cols-5 lg:my-6 lg:flex lg:space-x-8 xl:space-x-10">
+          <ul className="mt-8 mb-4 grid grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
             {techStack.map((item, idx) => (
               <li
                 key={idx}
-                className="flex flex-col items-center mb-6 space-y-1 lg:space-y-2"
+                className="mb-6 flex flex-col items-center space-y-1 lg:space-y-2"
               >
                 <motion.img
                   variants={scaleOnHover}
@@ -46,7 +46,7 @@ const Skills = () => {
       </div>
 
       {/*  */}
-      <div className="w-full space-y-2 lg:space-y-4 xl:mt-8 lg:mt-2 select-none">
+      <div className="w-full select-none space-y-2 lg:mt-2 lg:space-y-4 xl:mt-8">
         <h1 className="text-3xl font-semibold sm:text-3xl xl:text-5xl">
           Development Tools
         </h1>
@@ -54,11 +54,11 @@ const Skills = () => {
           These are the tools that I use for web development.
         </p>
         <div>
-          <ul className="grid justify-center grid-cols-5 gap-2 mt-8 mb-4 sm:grid-cols-5 lg:my-6 lg:flex lg:space-x-8 xl:space-x-10 lg:justify-start">
+          <ul className="mt-8 mb-4 grid grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
             {toolsStack.map((item, idx) => (
               <li
                 key={idx}
-                className="flex flex-col items-center mb-6 space-y-2 lg:space-y-4"
+                className="mb-6 flex flex-col items-center space-y-2 lg:space-y-4"
               >
                 <motion.img
                   variants={scaleOnHover}
@@ -84,10 +84,10 @@ const Skills = () => {
       </div>
 
       <div>
-        <h2 className="mt-2 mb-2 xl:mb-5 text-2xl font-bold xl:mt-10">
+        <h2 className="mt-2 mb-2 text-2xl font-bold xl:mb-5 xl:mt-10">
           Other Skills
         </h2>
-        <ul className="flex flex-col space-y-2 text-base lg:space-y-0 lg:text-lg xl:text-xl lg:space-x-4 lg:flex-row">
+        <ul className="flex flex-col space-y-2 text-base lg:flex-row lg:space-y-0 lg:space-x-4 lg:text-lg xl:text-xl">
           <li>Computer Troubleshooting and Repair</li>
           <li className="hidden font-semibold text-red-500 lg:block">|</li>
           <li>Digital Photo Manipulation</li>

@@ -9,10 +9,10 @@ import AnimatePage from "../AnimatePages";
 
 const Home = () => {
   return (
-    <div className="bg-[#161617] relative w-full min-h-screen">
+    <div className="relative min-h-screen w-full bg-[#161617]">
       <Navbar />
       <AnimatePage>
-        <div className="lg:ml-[20%] lg:absolute xl:ml-[18%] lg:inset-0">
+        <div className="lg:absolute lg:inset-0 lg:ml-[20%] xl:ml-[18%]">
           <Hero />
           <div className="lg:hidden">
             <Skills />

@@ -7,7 +7,6 @@ import {
   Navigate,
 } from "react-router-dom";
 
-
 import ContactPage from "./Pages/ContactPage";
 import Home from "./Pages/Home";
 import PageNotFound from "./Pages/PageNotFound";
