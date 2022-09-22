@@ -14,11 +14,11 @@ const Projects = () => {
   };
 
   return (
-    <div className="bg-[#161617] pt-[120px] lg:flex lg:flex-row-reverse h-full lg:min-h-screen lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28">
-      <div className="px-8 py-4 space-y-4 text-white lg:w-[65%] xl:w-[60%] lg:space-y-0">
+    <div className="h-full bg-[#161617] pt-[120px] lg:flex lg:min-h-screen lg:flex-row-reverse lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28">
+      <div className="space-y-4 px-8 py-4 text-white lg:w-[65%] lg:space-y-0 xl:w-[60%]">
         <h1 className="text-2xl font-bold lg:hidden">PROJECTS</h1>
         <div
-          className="w-full h-[220px] md:h-[300px] lg:h-[305px] xl:h-[415px] overflow-hidden drop-shadow-lg relative bg-contain bg-no-repeat lg:bg-cover bg-top"
+          className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:h-[305px] lg:bg-cover xl:h-[415px]"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
         >
           {/* <img
@@ -27,11 +27,11 @@ const Projects = () => {
             alt=""
           /> */}
         </div>
-        <h1 className="text-2xl font-bold text-vividRed-900 lg:text-3xl xl:text-5xl lg:py-2 xl:py-8">
+        <h1 className="text-2xl font-bold text-vividRed-900 lg:py-2 lg:text-3xl xl:py-8 xl:text-5xl">
           {project?.title}
         </h1>
-        <div className="flex flex-col w-full lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
-          <div className="flex lg:flex-col lg:text-lg xl:text-xl space-x-2 lg:space-x-0">
+        <div className="flex w-full flex-col lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
+          <div className="flex space-x-2 lg:flex-col lg:space-x-0 lg:text-lg xl:text-xl">
             <p>Tech Stack:</p>
             <div className="flex space-x-4">
               {project?.stack.map((list, idx) => {
@@ -43,7 +43,7 @@ const Projects = () => {
               })}
             </div>
           </div>
-          <div className="flex lg:flex-col lg:text-lg xl:text-xl space-x-2 lg:space-x-0">
+          <div className="flex space-x-2 lg:flex-col lg:space-x-0 lg:text-lg xl:text-xl">
             <p>Links:</p>
             <div className="flex space-x-2">
               <a
@@ -65,13 +65,13 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <p className="text-sm lg:text-base xl:leading-10 xl:text-lg lg:leading-6 text-justify">
+        <p className="text-justify text-sm lg:text-base lg:leading-6 xl:text-lg xl:leading-10">
           {project?.description}
           <br /> <a href="#">More details on the github repository.</a>
         </p>
       </div>
 
-      <ul className="grid grid-cols-3 gap-2 px-8 lg:px-4 lg:grid-cols-1 lg:w-[20%] xl:gap-6 lg:gap-3">
+      <ul className="grid grid-cols-3 gap-2 px-8 lg:w-[20%] lg:grid-cols-1 lg:gap-3 lg:px-4 xl:gap-6">
         {projects.map((data, index) => (
           <motion.li
             animate={control}

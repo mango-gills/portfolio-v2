@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-[#08060c] text-white text-center py-6 border-t-2 w-full border-gray-400/50">
+    <div className="w-full border-t-2 border-gray-400/50 bg-[#08060c] py-6 text-center text-white">
       <div className="flex justify-between px-8 font-light text-red-500">
         <p className="text-xs sm:text-base">
           Mango Devs - Copyright &copy; 2022
