@@ -8,7 +8,7 @@ const Contact = () => {
       style={{ backgroundImage: `url(${mainBg})` }}
     >
       <div className=" px-8 py-12 text-white selection:bg-white selection:text-vividRed-900 lg:w-[70%] lg:py-0 xl:w-[62%]">
-        <h1 className="text-3xl font-bold selection:bg-white lg:mb-8 lg:text-5xl xl:mb-10 xl:text-7xl">
+        <h1 className="text-3xl font-bold drop-shadow-vividRed-lg selection:bg-white lg:mb-8 lg:text-5xl xl:mb-10 xl:text-7xl">
           Get in touch
         </h1>
         <p className="my-2 text-red-500 xl:text-xl">
