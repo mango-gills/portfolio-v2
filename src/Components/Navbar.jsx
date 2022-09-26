@@ -65,21 +65,21 @@ const Navbar = () => {
             </p>
           </Link>
 
-          <ul className="mt-6 space-y-2 text-xl text-white xl:mt-12 xl:space-y-4 xl:text-2xl">
-            <li className="">
+          <ul className="mt-6 flex flex-col space-y-2 text-xl text-white xl:mt-12 xl:text-2xl">
+            <li className="hover-underline">
               <Link to={"/skills"}>Skills & Tools</Link>
             </li>
-            <li>
+            <li className="hover-underline">
               <Link to={"/projects"}>Projects</Link>
             </li>
-            <li>CV</li>
-            <li>
+            <li className="hover-underline">CV</li>
+            <li className="hover-underline">
               <Link to={"/contact"}>Contact</Link>
             </li>
           </ul>
 
           <ul className="mt-6 space-y-2 xl:mt-12 xl:space-y-4">
-            <li className="flex items-center ">
+            <li className="flex cursor-pointer items-center">
               <AiFillGithub size={30} className="text-white" />
 
               <a
@@ -90,7 +90,7 @@ const Navbar = () => {
                 Github
               </a>
             </li>
-            <li className="flex items-center">
+            <li className="flex cursor-pointer items-center">
               <AiOutlineGitlab size={30} className="text-white" />
               <a
                 href="https://gitlab.com/muk21"
@@ -100,7 +100,7 @@ const Navbar = () => {
                 Gitlab
               </a>
             </li>
-            <li className="flex items-center">
+            <li className="flex cursor-pointer items-center">
               <AiFillLinkedin size={30} className="text-white" />
               <a
                 href="https://www.linkedin.com/in/mcge/"
