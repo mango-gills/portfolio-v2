@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { elementStyles } from "../styles";
 import { projects } from "../projectsData";
 import { motion, useAnimation } from "framer-motion";
+import {
+  animateLinks,
+  onDisplayVariant,
+  revealChildren,
+  slideInRevealChildren,
+} from "../motionVariants.js";
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
@@ -73,11 +79,17 @@ const Projects = () => {
         </p>
       </div>
 
-      <ul className="grid grid-cols-3 gap-2 px-8 lg:w-[20%] lg:grid-cols-1 lg:gap-3 lg:px-4 xl:gap-6">
+      <motion.ul
+        variants={onDisplayVariant}
+        initial="init"
+        animate="active"
+        className="grid grid-cols-3 gap-2 px-8 lg:w-[20%] lg:grid-cols-1 lg:gap-3 lg:px-4 xl:gap-6"
+      >
         {projects.map((data, index) => (
           <motion.li
-            animate={control}
-            key={index}
+            variants={slideInRevealChildren}
+            // animate={control}
+            // key={index}
             className={
               activeCard === data.id
                 ? elementStyles.projectCardActive
@@ -102,7 +114,7 @@ const Projects = () => {
             </div>
           </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };
