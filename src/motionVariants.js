@@ -29,6 +29,17 @@ export const revealChildren = {
   },
 };
 
+export const slideInRevealChildren = {
+  init: {
+    opacity: 0,
+    x: -150,
+  },
+  active: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
 export const slideInMenu = {
   init: {
     x: "100vw",
@@ -80,7 +91,7 @@ if (!isSmall) {
       x: 0,
       y: 0,
       transition: {
-        delay: 1.2,
+        delay: 1,
         type: "spring",
         stiffness: 600,
       },
@@ -96,7 +107,7 @@ if (!isSmall) {
       x: 0,
       y: 0,
       transition: {
-        delay: 1.2,
+        delay: 1,
         type: "spring",
         stiffness: 500,
       },
