@@ -1,7 +1,7 @@
-import React from "react";
+import AnimatePage from "../AnimatePages";
 import Contact from "../Components/Contact";
 import Navbar from "../Components/Navbar";
-import AnimatePage from "../AnimatePages";
+import React from "react";
 
 const ContactPage = () => {
   return (

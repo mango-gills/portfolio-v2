@@ -1,16 +1,16 @@
-import { AnimatePresence } from "framer-motion";
-import React from "react";
 import {
+  Navigate,
+  Route,
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
 } from "react-router-dom";
 
+import { AnimatePresence } from "framer-motion";
 import ContactPage from "./Pages/ContactPage";
 import Home from "./Pages/Home";
 import PageNotFound from "./Pages/PageNotFound";
 import ProjectsPage from "./Pages/ProjectsPage";
+import React from "react";
 import SkillsAndTools from "./Pages/SkillsAndTools";
 
 const App = () => {

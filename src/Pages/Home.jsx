@@ -1,11 +1,11 @@
-import React from "react";
+import AnimatePage from "../AnimatePages";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 import Projects from "../Components/Projects";
+import React from "react";
 import Skills from "../Components/Skills";
-import AnimatePage from "../AnimatePages";
 
 const Home = () => {
   return (

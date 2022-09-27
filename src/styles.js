@@ -13,4 +13,6 @@ export const elementStyles = {
     "mb-1 text-sm font-semibold tracking-wider sm:text-xl lg:text-lg xl:text-[1.7rem] text-vividRed-900",
   projectCardHeadingActive:
     "mb-1 text-sm font-semibold tracking-wider sm:text-xl lg:text-lg xl:text-[1.7rem] text-[#3D3D3D]",
+  heroBtn:
+    "mt-4 cursor-pointer rounded-sm bg-vividRed-900 px-4 py-2  text-xs font-semibold text-neutral-900 drop-shadow-lg sm:px-6 sm:py-4 lg:px-8 lg:text-xl xl:mt-10 xl:text-2xl",
 };

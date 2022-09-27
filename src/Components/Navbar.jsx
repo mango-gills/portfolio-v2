@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import { AiFillGithub, AiFillLinkedin, AiOutlineGitlab } from "react-icons/ai";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { animateLinks, item, slideInMenu } from "../motionVariants";
+
 import { FaSun } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { MdOutlineClose } from "react-icons/md";
-import { elementStyles } from "../styles";
-import { motion, AnimatePresence } from "framer-motion";
-import { slideInMenu, animateLinks, item } from "../motionVariants";
-import { AiOutlineGitlab, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import avatarIMG from "../assets/defmhr4-fullview.webp";
+import { MdOutlineClose } from "react-icons/md";
 import { Link as ScrollLink } from "react-scroll";
+import avatarIMG from "../assets/defmhr4-fullview.webp";
+import { elementStyles } from "../styles";
 
 const Navbar = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);

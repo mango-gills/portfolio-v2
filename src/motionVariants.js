@@ -79,7 +79,7 @@ export const item = {
 
 export let animateShadow = {};
 
-const isSmall = window.innerWidth < 1280;
+export const isSmall = window.innerWidth < 1280;
 
 if (!isSmall) {
   animateShadow = {

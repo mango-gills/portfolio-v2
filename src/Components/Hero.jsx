@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
-import mainBg from "../assets/main-bg.webp";
-import { motion } from "framer-motion";
 import {
-  onDisplayVariant,
   animateShadow,
+  onDisplayVariant,
   revealChildren,
 } from "../motionVariants";
+
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { elementStyles } from "../styles.js";
+import mainBg from "../assets/main-bg.webp";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -56,23 +60,69 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        <motion.button
-          variants={revealChildren}
-          whileHover={{
-            backgroundColor: "#3D3D3D",
-            color: "white",
-            transition: {
-              color: {
-                delay: 0.1,
-              },
-            },
-          }}
-          className="mt-4 cursor-pointer rounded-sm bg-vividRed-900 px-4 py-2  text-xs font-semibold text-neutral-900 drop-shadow-lg sm:px-6 sm:py-4 lg:px-8 lg:text-xl xl:mt-10 xl:text-2xl"
-        >
-          Contact me
-        </motion.button>
+        {/* btn */}
+        <MobileButton />
+        <DesktopButton />
       </motion.div>
     </div>
+  );
+};
+
+// Mobile Layout Button
+const MobileButton = () => {
+  return (
+    <motion.button
+      variants={revealChildren}
+      whileHover={{
+        backgroundColor: "#3D3D3D",
+        color: "white",
+        transition: {
+          color: {
+            delay: 0.1,
+          },
+        },
+      }}
+      className={`${elementStyles.heroBtn} lg:hidden`}
+    >
+      <ScrollLink
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-80}
+        duration={600}
+      >
+        Contact me
+      </ScrollLink>
+    </motion.button>
+  );
+};
+
+// Desktop Layout Button
+const DesktopButton = () => {
+  return (
+    <motion.button
+      variants={revealChildren}
+      whileHover={{
+        backgroundColor: "#3D3D3D",
+        color: "white",
+        transition: {
+          color: {
+            delay: 0.1,
+          },
+        },
+      }}
+      className={`${elementStyles.heroBtn} hidden lg:block`}
+    >
+      <Link
+        to={"/contact"}
+        spy={true}
+        smooth={true}
+        offset={-80}
+        duration={600}
+      >
+        Contact me
+      </Link>
+    </motion.button>
   );
 };
 

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { elementStyles } from "../styles";
-import { projects } from "../projectsData";
-import { motion, useAnimation } from "framer-motion";
 import {
   animateLinks,
   onDisplayVariant,
   revealChildren,
   slideInRevealChildren,
 } from "../motionVariants.js";
+import { motion, useAnimation } from "framer-motion";
+
+import { elementStyles } from "../styles";
+import { projects } from "../projectsData";
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
