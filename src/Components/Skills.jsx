@@ -1,8 +1,9 @@
-import React from "react";
+import { revealText, scaleOnHover } from "../motionVariants";
 import { techStack, toolsStack } from "../assets";
+
+import React from "react";
 import { elementStyles } from "../styles";
 import { motion } from "framer-motion";
-import { scaleOnHover, revealText } from "../motionVariants";
 
 const Skills = () => {
   return (

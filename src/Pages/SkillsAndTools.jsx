@@ -1,7 +1,7 @@
+import AnimatePage from "../AnimatePages";
+import Navbar from "../Components/Navbar";
 import React from "react";
 import Skills from "../Components/Skills";
-import Navbar from "../Components/Navbar";
-import AnimatePage from "../AnimatePages";
 
 const SkillsAndTools = () => {
   return (

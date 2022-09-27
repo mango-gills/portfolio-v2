@@ -1,7 +1,7 @@
-import React from "react";
+import AnimatePage from "../AnimatePages";
 import Navbar from "../Components/Navbar";
 import Projects from "../Components/Projects";
-import AnimatePage from "../AnimatePages";
+import React from "react";
 
 const ProjectsPage = () => {
   return (
