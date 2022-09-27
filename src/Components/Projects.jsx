@@ -20,7 +20,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="h-full bg-[#161617] pt-[20px] lg:flex lg:min-h-screen lg:flex-row-reverse lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28">
+    <div
+      id="projects"
+      className="h-full bg-[#161617] pt-[20px] lg:flex lg:min-h-screen lg:flex-row-reverse lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28"
+    >
       <div className="space-y-4 px-8 py-4 text-white selection:bg-white selection:text-vividRed-900 lg:w-[65%]  lg:space-y-0 xl:w-[60%]">
         <h1 className="text-2xl font-bold drop-shadow-vividRed-lg lg:hidden">
           PROJECTS
@@ -89,7 +92,7 @@ const Projects = () => {
           <motion.li
             variants={slideInRevealChildren}
             // animate={control}
-            // key={index}
+            key={index}
             className={
               activeCard === data.id
                 ? elementStyles.projectCardActive

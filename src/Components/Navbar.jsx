@@ -8,6 +8,7 @@ import { slideInMenu, animateLinks, item } from "../motionVariants";
 import { AiOutlineGitlab, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import avatarIMG from "../assets/defmhr4-fullview.webp";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -15,23 +16,23 @@ const Navbar = () => {
   const navLinks = [
     {
       title: "Home",
-      path: "/",
+      element: "hero",
     },
     {
       title: "Skills & Tools",
-      path: "/skills",
+      element: "skills",
     },
     {
       title: "Projects",
-      path: "/projects",
+      element: "projects",
     },
     {
       title: "CV",
-      path: "/resume",
+      element: "cv",
     },
     {
       title: "Contact",
-      path: "/contact",
+      element: "contact",
     },
   ];
 
@@ -170,7 +171,26 @@ const Navbar = () => {
                       // transition={{ duration: 0.3, delay: idx * 0.3 }}
                       className={elementStyles.hoverLink}
                     >
-                      <Link to={`${link.path}`}>{link.title}</Link>
+                      {link.element !== "cv" ? (
+                        <ScrollLink
+                          to={`${link.element}`}
+                          spy={true}
+                          smooth={true}
+                          offset={-80}
+                          duration={600}
+                          onClick={() => setNavIsOpen(false)}
+                        >
+                          {link.title}
+                        </ScrollLink>
+                      ) : (
+                        <a
+                          href="https://github.com/mango-gills"
+                          target="_blank"
+                          onClick={() => setNavIsOpen(false)}
+                        >
+                          {link.title}
+                        </a>
+                      )}
                     </motion.li>
                   ))}
                 </AnimatePresence>

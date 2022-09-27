@@ -4,6 +4,7 @@ import mainBg from "../assets/main-bg.webp";
 const Contact = () => {
   return (
     <div
+      id="contact"
       className="flex h-full w-full items-center justify-center bg-[#161617] bg-cover bg-no-repeat lg:justify-start lg:pl-16 xl:pl-24"
       style={{ backgroundImage: `url(${mainBg})` }}
     >

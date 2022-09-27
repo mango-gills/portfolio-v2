@@ -6,7 +6,10 @@ import { scaleOnHover, revealText } from "../motionVariants";
 
 const Skills = () => {
   return (
-    <div className="bg[#161617] flex h-full flex-col items-start  py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center  lg:pl-24 xl:pl-32">
+    <div
+      id="skills"
+      className="bg[#161617] flex h-full flex-col items-start  py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center  lg:pl-24 xl:pl-32"
+    >
       <div className="w-full space-y-2 text-white lg:space-y-4">
         <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg sm:text-3xl xl:text-5xl">
           Tech Stacks
