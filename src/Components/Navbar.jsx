@@ -44,11 +44,6 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden min-h-screen w-[400px] border-r-2 border-vividRed-900 bg-[#1F1F1F] px-12 py-12 lg:flex lg:w-[20%] lg:flex-col lg:justify-center lg:px-8 lg:py-6 xl:w-[18%] xl:px-12 xl:py-12">
-        {/* <div
-          className="top-nav bg-white w-full h-56 aspect-square overflow-hidden rounded-sm bg-cover bg-left bg-no-repeat"
-          style={{ backgroundImage: `url(${avatarIMG})` }}
-
-        > */}
         <div className="pointer-events-none flex w-full select-none overflow-hidden rounded-sm lg:h-48 xl:h-56">
           <img
             src={avatarIMG}
@@ -118,14 +113,21 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       <div className="fixed z-10 flex w-full items-center justify-between border-b-2 border-vividRed-900 bg-[#08060c] px-6 py-4 text-white lg:hidden">
-        <Link to={"/"} className="cursor-pointer select-none">
+        <ScrollLink
+          to={`hero`}
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={600}
+          className="cursor-pointer select-none"
+        >
           <h1 className="text-2xl font-bold tracking-widest text-white sm:text-3xl">
             Mango Devs
           </h1>
           <p className="text-base tracking-widest text-vividRed-900 sm:text-lg">
             Web Developer
           </p>
-        </Link>
+        </ScrollLink>
 
         <HiOutlineMenuAlt3
           size={35}
