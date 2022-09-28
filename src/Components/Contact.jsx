@@ -15,34 +15,49 @@ const Contact = () => {
         <p className="my-2 text-red-500 xl:text-xl">
           @: markencinares@gmail.com
         </p>
-        <form className="w-full space-y-6 py-4 xl:space-y-6">
+        <form
+          action="https://formsubmit.co/55f67f64112f800526528b28cf97aca7"
+          method="POST"
+          className="w-full space-y-6 py-4 xl:space-y-6"
+        >
           <div className="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4">
             <input
               type="text"
               className={elementStyles.inputStyle}
               placeholder="name"
+              name="name"
             />
             <input
               type="email"
               className={elementStyles.inputStyle}
               placeholder="email"
+              name="email"
               required
             />
           </div>
           <input
+            type="hidden"
+            name="_next"
+            value="https://portfolio-v2-zeta-flax.vercel.app/"
+          />
+          <input
             type="text"
             className={elementStyles.inputStyle}
             placeholder="subject"
+            name="_subject"
           />
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
             className={`${elementStyles.inputStyle} font-light xl:h-[30%]`}
             placeholder="message"
           ></textarea>
-          <button className="rounded-sm border-2 border-red-500 bg-transparent px-4 py-2 text-sm font-semibold text-red-500 lg:px-6 lg:py-4 xl:text-xl">
+          <button
+            type="submit"
+            className="rounded-sm border-2 border-red-500 bg-transparent px-4 py-2 text-sm font-semibold text-red-500 lg:px-6 lg:py-4 xl:text-xl"
+          >
             Send Message!
           </button>
         </form>
