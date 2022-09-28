@@ -48,7 +48,7 @@ export const projects = [
       "Group project and one of the requirements for finishing bootcamp, it is made with ReactJS for the frontend and Firebase for backend. We utilized Firebase's Authentication for signing/loggin in user accounts, Firestore for storing messages, friends list and Firebase Storage for uploading and retrieving user avatar.",
   },
   {
-    images: ["1", "2"],
+    images: ["./p7-1.webp", "./p7-2.webp"],
     id: "005",
     title: "React Todo",
     stack: ["ReactJS", "Tailwind", "Firebase"],
@@ -60,7 +60,7 @@ export const projects = [
       "A TODO App challenge from Frontend Mentor but using ReactJS and Tailwind for the frontend, as for the backend the project uses Firebase Firestore for storing inputs from user and also updates with the todo list. This project is not yet complete and still undergoing development.",
   },
   {
-    images: ["1", "2"],
+    images: ["./p6-1.webp", "./p6-2.webp"],
     id: "006",
     title: "Shortly",
     stack: ["ReactJS", "Tailwind", "Shrtcode-API"],
