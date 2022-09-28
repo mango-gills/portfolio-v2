@@ -59,7 +59,7 @@ const Projects = () => {
             <p>Links:</p>
             <div className="flex space-x-2">
               <a
-                href={`https://www.${project?.links.demo}`}
+                href={`${project?.links.demo}`}
                 target={"_blank"}
                 rel={"external"}
                 className="text-vividRed-900"
@@ -79,7 +79,14 @@ const Projects = () => {
         </div>
         <p className="text-justify text-sm lg:text-base lg:leading-6 xl:text-lg xl:leading-10">
           {project?.description}
-          <br /> <a href="#">More details on the github repository.</a>
+          <br />{" "}
+          <a
+            className="italic text-vividRed-900/80"
+            href={`https://www.${project?.links.code}`}
+            target="_blank"
+          >
+            Check github repository for more details.
+          </a>
         </p>
       </div>
 
