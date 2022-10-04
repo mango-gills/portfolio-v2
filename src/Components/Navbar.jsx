@@ -1,4 +1,9 @@
-import { AiFillGithub, AiFillLinkedin, AiOutlineGitlab } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillGitlab,
+  AiFillLinkedin,
+  AiOutlineGitlab,
+} from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { animateLinks, item, slideInMenu } from "../motionVariants";
@@ -37,6 +42,41 @@ const Navbar = () => {
     },
   ];
 
+  const navLinksDesktop = [
+    {
+      title: "Skills & Tools",
+      element: "skills",
+    },
+    {
+      title: "Projects",
+      element: "projects",
+    },
+    {
+      title: "CV",
+      element: "cv",
+    },
+    {
+      title: "Contact",
+      element: "contact",
+    },
+  ];
+
+  const profiles = [
+    {
+      title: "Github",
+      link: `https://github.com/mango-gills`,
+    },
+    {
+      title: "Gitlab",
+      link: `https://gitlab.com/muk21`,
+    },
+    {
+      title: "LinkedIn",
+      link: `https://www.linkedin.com/in/mcge/`,
+    },
+    ,
+  ];
+
   const handleNavigation = () => {
     setNavIsOpen(!navIsOpen);
   };
@@ -69,71 +109,56 @@ const Navbar = () => {
             </p>
           </ScrollLink>
 
+          {/* Page links */}
           <ul className="mt-6 flex flex-col space-y-2 text-xl text-white xl:mt-12 xl:text-2xl">
-            {/* <li className="hover-underline">
-              <Link to={"/skills"}>Skills & Tools</Link>
-            </li>
-            <li className="hover-underline">
-              <Link to={"/projects"}>Projects</Link>
-            </li>
-            <li className="hover-underline">CV</li>
-            <li className="hover-underline">
-              <Link to={"/contact"}>Contact</Link>
-            </li> */}
-
-            {navLinks.map((link, idx) => (
-              <li key={idx} className="hover-underline">
-                {link.element !== "cv" && link.element !== "hero" ? (
+            {navLinksDesktop.map((link, idx) => (
+              <li key={idx}>
+                {link.element !== "cv" ? (
                   <ScrollLink
                     to={`${link.element}`}
                     spy={true}
                     smooth={true}
                     offset={0}
                     duration={600}
+                    className="hover-underline"
                   >
                     {link.title}
                   </ScrollLink>
-                ) : link.element === "cv" ? (
-                  <a href="https://github.com/mango-gills" target="_blank">
+                ) : (
+                  <a
+                    className="hover-underline"
+                    href="https://github.com/mango-gills"
+                    target="_blank"
+                  >
                     {link.title}
                   </a>
-                ) : null}
+                )}
               </li>
             ))}
           </ul>
 
-          <ul className="mt-6 space-y-2 xl:mt-12 xl:space-y-4">
-            <li className="flex cursor-pointer items-center">
-              <AiFillGithub size={30} className="text-white" />
-
-              <a
-                href="https://github.com/mango-gills"
-                target="_blank"
-                className="ml-2 text-lg text-white xl:ml-4 xl:text-xl"
-              >
-                Github
-              </a>
-            </li>
-            <li className="flex cursor-pointer items-center">
-              <AiOutlineGitlab size={30} className="text-white" />
-              <a
-                href="https://gitlab.com/muk21"
-                target="_blank"
-                className="ml-2 text-lg text-white xl:ml-4 xl:text-xl"
-              >
-                Gitlab
-              </a>
-            </li>
-            <li className="flex cursor-pointer items-center">
-              <AiFillLinkedin size={30} className="text-white" />
-              <a
-                href="https://www.linkedin.com/in/mcge/"
-                target="_blank"
-                className="ml-2 text-lg text-white xl:ml-4 xl:text-xl"
-              >
-                LinkedIn
-              </a>
-            </li>
+          {/* Profile links  */}
+          <ul className="mt-6 space-y-1 text-white xl:mt-12">
+            {profiles.map((profile) => (
+              <li className="hover-underline">
+                <a
+                  href={profile.link}
+                  className="flex cursor-pointer items-center"
+                  target="_blank"
+                >
+                  {profile.title == "Github" ? (
+                    <AiFillGithub size={30} />
+                  ) : profile.title == "Gitlab" ? (
+                    <AiFillGitlab size={30} />
+                  ) : (
+                    <AiFillLinkedin size={30} />
+                  )}
+                  <p className="ml-2 text-lg xl:ml-4 xl:text-xl">
+                    {profile.title}
+                  </p>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -196,9 +221,6 @@ const Navbar = () => {
                     <motion.li
                       key={idx}
                       variants={item}
-                      // initial={{ opacity: 0 }}
-                      // animate={{ opacity: 1 }}
-                      // transition={{ duration: 0.3, delay: idx * 0.3 }}
                       className={elementStyles.hoverLink}
                     >
                       {link.element !== "cv" ? (
