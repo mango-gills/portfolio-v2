@@ -73,58 +73,58 @@ const Hero = () => {
 // Mobile Layout Button
 const MobileButton = () => {
   return (
-    <motion.button
-      variants={revealChildren}
-      whileHover={{
-        backgroundColor: "#3D3D3D",
-        color: "white",
-        transition: {
-          color: {
-            delay: 0.1,
-          },
-        },
-      }}
-      className={`${elementStyles.heroBtn} lg:hidden`}
+    <ScrollLink
+      to="contact"
+      spy={true}
+      smooth={true}
+      offset={-80}
+      duration={600}
     >
-      <ScrollLink
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-80}
-        duration={600}
+      <motion.button
+        variants={revealChildren}
+        whileHover={{
+          backgroundColor: "#3D3D3D",
+          color: "white",
+          transition: {
+            color: {
+              delay: 0.1,
+            },
+          },
+        }}
+        className={`${elementStyles.heroBtn} lg:hidden`}
       >
         Contact me
-      </ScrollLink>
-    </motion.button>
+      </motion.button>
+    </ScrollLink>
   );
 };
 
 // Desktop Layout Button
 const DesktopButton = () => {
   return (
-    <motion.button
-      variants={revealChildren}
-      whileHover={{
-        backgroundColor: "#3D3D3D",
-        color: "white",
-        transition: {
-          color: {
-            delay: 0.1,
-          },
-        },
-      }}
-      className={`${elementStyles.heroBtn} hidden lg:block`}
+    <ScrollLink
+      to={"contact"}
+      spy={true}
+      smooth={true}
+      offset={80}
+      duration={600}
     >
-      <Link
-        to={"/contact"}
-        spy={true}
-        smooth={true}
-        offset={-80}
-        duration={600}
+      <motion.button
+        variants={revealChildren}
+        whileHover={{
+          backgroundColor: "#3D3D3D",
+          color: "white",
+          transition: {
+            color: {
+              delay: 0.1,
+            },
+          },
+        }}
+        className={`${elementStyles.heroBtn} hidden lg:block`}
       >
         Contact me
-      </Link>
-    </motion.button>
+      </motion.button>
+    </ScrollLink>
   );
 };
 
