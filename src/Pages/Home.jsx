@@ -12,14 +12,12 @@ const Home = () => {
     <div className="relative min-h-screen w-full bg-[#161617]">
       <Navbar />
       <AnimatePage>
-        <div className="lg:absolute lg:inset-0 lg:ml-[20%] xl:ml-[18%]">
+        <div className="bg-red-300 lg:absolute lg:inset-0 lg:ml-[20%] xl:ml-[18%]">
           <Hero />
-          <div className="lg:hidden">
-            <Skills />
-            <Projects />
-            <Contact />
-            <Footer />
-          </div>
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
         </div>
       </AnimatePage>
     </div>

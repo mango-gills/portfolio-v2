@@ -15,8 +15,10 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex h-screen w-full select-none flex-col justify-center bg-cover bg-right bg-no-repeat p-8 py-28 lg:h-full lg:pl-28 xl:bg-bottom xl:pl-36"
-      style={{ backgroundImage: `url(${mainBg})` }}
+      className="flex h-screen w-full select-none flex-col justify-center bg-cover bg-fixed bg-right bg-no-repeat p-8 py-28 lg:h-full lg:pl-28 xl:bg-bottom xl:pl-36"
+      style={{
+        backgroundImage: `url(${mainBg})`,
+      }}
     >
       <motion.div
         variants={onDisplayVariant}

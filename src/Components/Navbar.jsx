@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden min-h-screen w-[400px] border-r-2 border-vividRed-900 bg-[#1F1F1F] px-12 py-12 lg:flex lg:w-[20%] lg:flex-col lg:justify-center lg:px-8 lg:py-6 xl:w-[18%] xl:px-12 xl:py-12">
+      <div className="fixed hidden min-h-screen w-[400px] border-r-2 border-vividRed-900 bg-[#1F1F1F] px-12 py-12 lg:flex lg:w-[20%] lg:flex-col lg:justify-center lg:px-8 lg:py-6 xl:w-[18%] xl:px-12 xl:py-12">
         <div className="pointer-events-none flex w-full select-none overflow-hidden rounded-sm lg:h-48 xl:h-56">
           <img
             src={avatarIMG}
@@ -53,17 +53,24 @@ const Navbar = () => {
         </div>
 
         <div className="bottom-nav selection:bg-vividRed-900/80 selection:text-neutral-900">
-          <Link to={"/"}>
+          <ScrollLink
+            to={`hero`}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={600}
+            className="cursor-pointer select-none"
+          >
             <h1 className="text-[2.2rem] font-bold tracking-widest text-white lg:mt-6 lg:text-[1.6rem] xl:text-[2rem]">
               Mango Devs
             </h1>
             <p className="text-xl tracking-widest text-vividRed-900 lg:text-lg xl:text-xl">
               Web Developer
             </p>
-          </Link>
+          </ScrollLink>
 
           <ul className="mt-6 flex flex-col space-y-2 text-xl text-white xl:mt-12 xl:text-2xl">
-            <li className="hover-underline">
+            {/* <li className="hover-underline">
               <Link to={"/skills"}>Skills & Tools</Link>
             </li>
             <li className="hover-underline">
@@ -72,7 +79,27 @@ const Navbar = () => {
             <li className="hover-underline">CV</li>
             <li className="hover-underline">
               <Link to={"/contact"}>Contact</Link>
-            </li>
+            </li> */}
+
+            {navLinks.map((link, idx) => (
+              <li key={idx} className="hover-underline">
+                {link.element !== "cv" && link.element !== "hero" ? (
+                  <ScrollLink
+                    to={`${link.element}`}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={600}
+                  >
+                    {link.title}
+                  </ScrollLink>
+                ) : link.element === "cv" ? (
+                  <a href="https://github.com/mango-gills" target="_blank">
+                    {link.title}
+                  </a>
+                ) : null}
+              </li>
+            ))}
           </ul>
 
           <ul className="mt-6 space-y-2 xl:mt-12 xl:space-y-4">
