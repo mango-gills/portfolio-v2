@@ -4,13 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  @layer responsive{
-    .text-shadow-sm{
-      text-shadow:-2px 2px 0px rgba(255, 49, 49, .8);
+@layer utilities {
+  @layer responsive {
+    .text-shadow-sm {
+      text-shadow: -2px 2px 0px rgba(255, 49, 49, 0.8);
     }
-    .text-shadow-lg{
-    text-shadow: -5px 5px 0px rgba(255, 49, 49,.8);
+    .text-shadow-lg {
+      text-shadow: -5px 5px 0px rgba(255, 49, 49, 0.8);
     }
   }
 }
@@ -49,29 +49,38 @@ body {
 
 /* underline animation */
 
-.hover-underline{
-  display:block;
+.hover-underline {
+  display: block;
   position: relative;
   cursor: pointer;
   z-index: 1;
-  padding: 5px 0;
+  padding: 4px 0;
+  transition: transform 0.3s ease-in-out;
 }
 
-.hover-underline::after{
-  content: '';
+.hover-underline:hover {
+  transform: translateX(25px);
+  padding-left: 10px;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+.hover-underline::after {
+  content: "";
   position: absolute;
-  width: 100%;
+  width: 90%;
   transform: scaleX(0);
-  height: 4px;
+  height: 40px;
   bottom: 0;
   left: 0;
-  background-color: #FF3131;
+  background-color: #ff3131;
   transform-origin: bottom right;
   transition: transform 0.3s ease-in-out;
   z-index: -1;
+  clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
 }
 
-.hover-underline:hover::after{
+.hover-underline:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
