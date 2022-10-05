@@ -117,7 +117,7 @@ if (!isSmall) {
 
 export const scaleOnHover = {
   init: {
-    scale: 0,
+    scale: 0.8,
   },
   active: {
     scale: [1, 1.2, 1.2, 1],
@@ -137,7 +137,7 @@ export const scaleOnHover = {
 
 export const revealText = {
   init: {
-    x: -80,
+    x: -200,
     opacity: 0,
   },
   active: {

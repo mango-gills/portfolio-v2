@@ -139,8 +139,8 @@ const Navbar = () => {
 
           {/* Profile links  */}
           <ul className="mt-6 space-y-1 text-white xl:mt-12">
-            {profiles.map((profile) => (
-              <li className="hover-underline">
+            {profiles.map((profile, idx) => (
+              <li key={idx} className="hover-underline">
                 <a
                   href={profile.link}
                   className="flex cursor-pointer items-center"

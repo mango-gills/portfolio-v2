@@ -1,11 +1,30 @@
+import React, { useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { revealText, scaleOnHover } from "../motionVariants";
 import { techStack, toolsStack } from "../assets";
 
-import React from "react";
 import { elementStyles } from "../styles";
-import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const Skills = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const animateLogo = useAnimation({ threshold: 0.2 });
+  const animateText = useAnimation({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (isInView) {
+      animateLogo.start(scaleOnHover.active);
+      animateText.start(revealText.active);
+    }
+
+    if (!isInView) {
+      animateLogo.start(scaleOnHover.init);
+      animateText.start(revealText.init);
+    }
+  }, [isInView]);
+
   return (
     <div
       id="skills"
@@ -20,7 +39,7 @@ const Skills = () => {
           frameworks, libraries and platforms.
         </p>
         <div>
-          <ul className="mt-8 mb-4 grid select-none grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10">
+          <ul className="mt-8 mb-4 grid select-none grid-cols-5 justify-center gap-2 sm:grid-cols-5 lg:my-6 lg:flex lg:justify-start lg:space-x-8 xl:space-x-10 ">
             {techStack.map((item, idx) => (
               <li
                 key={idx}
@@ -28,21 +47,23 @@ const Skills = () => {
               >
                 <motion.img
                   variants={scaleOnHover}
-                  initial="init"
-                  animate="active"
+                  // initial="init"
+                  animate={animateLogo}
                   whileHover="hover"
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}
                 />
-                <motion.p
-                  variants={revealText}
-                  initial="init"
-                  animate="active"
-                  className="text-xs md:text-sm xl:text-base"
-                >
-                  {item.name}
-                </motion.p>
+                <div className="overflow-hidden">
+                  <motion.p
+                    animate={animateText}
+                    // variants={revealText}
+                    // initial="init"
+                    className="text-xs md:text-sm xl:text-base"
+                  >
+                    {item.name}
+                  </motion.p>
+                </div>
               </li>
             ))}
           </ul>
@@ -66,28 +87,30 @@ const Skills = () => {
               >
                 <motion.img
                   variants={scaleOnHover}
-                  initial="init"
-                  animate="active"
+                  // initial="init"
+                  animate={animateLogo}
                   whileHover="hover"
                   src={item.logo}
                   alt={`${item.name}-logo`}
                   className={elementStyles.logoScale}
                 />
-                <motion.p
-                  variants={revealText}
-                  initial="init"
-                  animate="active"
-                  className="text-xs md:text-sm"
-                >
-                  {item.name}
-                </motion.p>
+                <div className="overflow-hidden">
+                  <motion.p
+                    animate={animateText}
+                    // variants={revealText}
+                    // initial="init"
+                    className="text-xs md:text-sm xl:text-base"
+                  >
+                    {item.name}
+                  </motion.p>
+                </div>
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <div>
+      <div ref={ref}>
         <h2 className="mt-2 mb-2 text-2xl font-bold drop-shadow-vividRed-lg xl:mb-5 xl:mt-10">
           Other Skills
         </h2>
