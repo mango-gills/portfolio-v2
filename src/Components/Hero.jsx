@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex h-screen w-full select-none flex-col justify-center bg-cover bg-fixed bg-right bg-no-repeat p-8 py-28 lg:h-full lg:pl-28 xl:bg-bottom xl:pl-36"
+      className=" flex h-screen w-full select-text flex-col justify-center bg-cover bg-fixed bg-right bg-no-repeat p-8 py-28 selection:bg-vividRed-900 selection:text-neutral-900 lg:h-full lg:pl-28 xl:bg-bottom xl:pl-36"
       style={{
         backgroundImage: `url(${mainBg})`,
       }}
@@ -33,7 +33,7 @@ const Hero = () => {
 
           <motion.h1
             variants={animateShadow}
-            className="absolute -left-[.15rem] top-[.15rem] z-[1] mb-2 text-[2.6rem] font-bold tracking-wider text-vividRed-900/80 sm:text-6xl md:-left-[.2rem] md:top-[.2rem] md:text-8xl lg:-left-[.32rem] lg:top-[.35rem] lg:mb-4 lg:text-[6rem] xl:mb-6 xl:text-[8rem]"
+            className="absolute -left-[.15rem] top-[.15rem] z-[1] mb-2 text-[2.6rem] font-bold tracking-wider text-vividRed-900/80 selection:text-neutral-900 sm:text-6xl md:-left-[.2rem] md:top-[.2rem] md:text-8xl lg:-left-[.32rem] lg:top-[.35rem] lg:mb-4 lg:text-[6rem] xl:mb-6 xl:text-[8rem]"
           >
             Hello World!
           </motion.h1>

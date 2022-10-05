@@ -1,19 +1,19 @@
-import html5 from "./html5-original.svg";
 import css3 from "./css3-original.svg";
-import js from "./javascript-original.svg";
-import react from "./react-original.svg";
 import express from "./express-original.svg";
-import nodejs from "./nodejs-original.svg";
-import mongodb from "./mongodb-original.svg";
 import firebase from "./firebase-plain.svg";
-import tailwind from "./tailwindcss-plain.svg";
-
-import vscode from "./vscode-original.svg";
 import github from "./github-original.svg";
 import gitlab from "./gitlab-original.svg";
-import photoshop from "./photoshop-plain.svg";
-import illustrator from "./illustrator-plain.svg";
-import xd from "./xd-plain.svg";
+import html5 from "./html5-original.svg";
+import illustrator from "./illustrator.svg";
+import js from "./javascript.svg";
+import mongodb from "./mongodb-original.svg";
+import motion from "./motion.png";
+import nodejs from "./nodejs-original.svg";
+import photoshop from "./photoshop.svg";
+import react from "./react-original.svg";
+import tailwind from "./tailwindcss-plain.svg";
+import vscode from "./vscode-original.svg";
+import xd from "./xd.svg";
 
 export const techStack = [
   {
@@ -51,6 +51,10 @@ export const techStack = [
   {
     name: "TailwindCSS",
     logo: tailwind,
+  },
+  {
+    name: "Motion",
+    logo: motion,
   },
 ];
 
