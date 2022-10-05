@@ -1,19 +1,28 @@
-import React, { useState } from "react";
-import {
-  animateLinks,
-  onDisplayVariant,
-  revealChildren,
-  slideInRevealChildren,
-} from "../motionVariants.js";
-import { motion, useAnimation } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { onDisplayVariant, slideInRevealChildren } from "../motionVariants.js";
 
 import { elementStyles } from "../styles";
 import { projects } from "../projectsData";
+import { useRef } from "react";
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
   const [activeCard, setActiveCard] = useState();
   const control = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const animateCards = useAnimation({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (isInView) {
+      animateCards.start(slideInRevealChildren.active);
+    }
+    if (!isInView) {
+      animateCards.start(slideInRevealChildren.init);
+    }
+  }, [isInView]);
 
   const handleData = (data) => {
     setProject(data);
@@ -32,14 +41,11 @@ const Projects = () => {
         <div
           className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:h-[305px] lg:bg-cover xl:h-[415px]"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
+        />
+        <h1
+          ref={ref}
+          className="text-2xl font-bold text-vividRed-900 drop-shadow-dark-lg lg:py-2 lg:text-3xl xl:py-8 xl:text-5xl"
         >
-          {/* <img
-            className="w-full h-full object-cover absolute"
-            src={project?.images[0]}
-            alt=""
-          /> */}
-        </div>
-        <h1 className="text-2xl font-bold text-vividRed-900 drop-shadow-dark-lg lg:py-2 lg:text-3xl xl:py-8 xl:text-5xl">
           {project?.title}
         </h1>
         <div className="flex w-full flex-col lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
@@ -90,17 +96,12 @@ const Projects = () => {
         </p>
       </div>
 
-      <motion.ul
-        variants={onDisplayVariant}
-        initial="init"
-        animate="active"
-        className="grid grid-cols-3 gap-2 px-8 lg:w-[20%] lg:grid-cols-1 lg:gap-3 lg:px-4 xl:gap-6"
-      >
+      <ul className="grid grid-cols-3 gap-2 px-8 lg:w-[20%] lg:grid-cols-1 lg:gap-3 lg:px-4 xl:gap-6">
         {projects.map((data, index) => (
           <motion.li
-            variants={slideInRevealChildren}
-            // animate={control}
+            animate={animateCards}
             key={index}
+            transition={{ delay: index * 0.1 }}
             className={
               activeCard === data.id
                 ? elementStyles.projectCardActive
@@ -125,7 +126,7 @@ const Projects = () => {
             </div>
           </motion.li>
         ))}
-      </motion.ul>
+      </ul>
     </div>
   );
 };
