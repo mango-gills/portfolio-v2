@@ -9,7 +9,7 @@ export const projects = [
       code: "github.com/mango-gills",
     },
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
+      "A web version of the popular TV Game Show - Who Want's to be a Millionaire. Built from the ground up with HTML, CSS and JavaScript as a requirement for bootcamp projects and in collaboration with the following developers: Arielle Batasin, Art Lanopa, Leslie Pino, Jason Almero",
   },
   {
     images: ["./p3-1.webp", "./p3-1.webp"],
@@ -21,7 +21,7 @@ export const projects = [
       code: "github.com/mango-gills/Shappy",
     },
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non itaque cum ad et, maxime laborum odit molestiae repudiandae consequatur ut voluptatem fugiat? Numquam, veniam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente consequatur corrupti.",
+      "Bootcamp project 3 is a simple E-commerce website made with ReactJS as the frontend and utilizes FakeStoreAPI's products data to populate the page with different kind of products which is randomly displayed at the Featured Products component. I also used TailwindCSS for styling up the page which we also recently learned to use at that time.",
   },
   {
     images: ["./p4-1.webp", "./p4-1.webp"],
