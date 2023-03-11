@@ -5,7 +5,7 @@ import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 import Projects from "../Components/Projects";
 import React from "react";
-import Skills from "../Components/Skills";
+import Skills from "../Components/SkillsSectionComponents/Skills";
 
 const Home = () => {
   return (

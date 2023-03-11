@@ -10,8 +10,12 @@ const Footer = () => {
           Mango Devs - Copyright &copy; 2022
         </p>
         <div className="flex space-x-4 text-white">
-          <BsLinkedin className="cursor-pointer" size={20} />
-          <BsGithub className="cursor-pointer" size={20} />
+          <a href="https://www.linkedin.com/in/mcge/" target="_blank">
+            <BsLinkedin size={20} />
+          </a>
+          <a href="https://github.com/mango-gills" target="_blank">
+            <BsGithub size={20} />
+          </a>
         </div>
       </div>
     </div>

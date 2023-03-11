@@ -14,6 +14,9 @@ import react from "./react-original.svg";
 import tailwind from "./tailwindcss-plain.svg";
 import vscode from "./vscode-original.svg";
 import xd from "./xd.svg";
+import meteor from "./meteor-original.svg";
+import bootstrap from "./bootstrap-original.svg";
+import figma from "./figma-original.svg";
 
 export const techStack = [
   {
@@ -49,11 +52,19 @@ export const techStack = [
     logo: firebase,
   },
   {
+    name: "MeteorJS",
+    logo: meteor,
+  },
+  {
     name: "TailwindCSS",
     logo: tailwind,
   },
   {
-    name: "Motion",
+    name: "Bootstrap",
+    logo: bootstrap,
+  },
+  {
+    name: "Framer Motion",
     logo: motion,
   },
 ];
@@ -82,5 +93,9 @@ export const toolsStack = [
   {
     name: "XD",
     logo: xd,
+  },
+  {
+    name: "Figma",
+    logo: figma,
   },
 ];
