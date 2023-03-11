@@ -15,7 +15,7 @@ import SkillsAndTools from "./Pages/SkillsAndTools";
 
 const App = () => {
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

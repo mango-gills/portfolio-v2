@@ -120,7 +120,7 @@ const Projects = () => {
                 {data.title}
               </h1>
 
-              <p className="text-sm sm:text-sm xl:text-lg">
+              <p className="text-xs sm:text-sm xl:text-lg">
                 Project - {data.id}
               </p>
             </div>
