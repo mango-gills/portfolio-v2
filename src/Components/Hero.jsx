@@ -5,7 +5,6 @@ import {
   revealChildren,
 } from "../motionVariants";
 
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { elementStyles } from "../styles.js";
 import mainBg from "../assets/main-bg.webp";
@@ -41,17 +40,18 @@ const Hero = () => {
 
         <motion.div
           variants={revealChildren}
-          className="my-6 w-[95%] text-white md:w-5/6 lg:mt-12 lg:w-3/4 xl:w-[54%]"
+          className="my-6 w-full text-justify text-white md:w-5/6 lg:mt-12 lg:w-3/4 xl:w-[60%]"
         >
           <h1 className="text-sm font-light text-white/50 md:mb-2 md:text-base lg:text-xl">
             About Me
           </h1>
-          <p className="text-xs leading-loose sm:text-lg md:text-xl md:leading-relaxed xl:text-[1.4rem]">
+          <p className="text-xs leading-loose sm:text-lg md:text-xl md:leading-relaxed xl:text-[1.25rem]">
             <span className="text-2xl text-vividRed-900">&lt;</span> Hi there!
-            My name is Mark Encinares, I am aiming to be a good Full Stack Web
-            Developer but currently I am focusing more with technologies used
-            with Frontend Development, I am always seeking to improve my skills
-            slowly but surely.{" "}
+            I'm Mark Encinares, aspiring to be a skilled Full Stack Web
+            Developer. While my focus is primarily on Frontend Development
+            technologies at the moment, I am committed to continuously improving
+            my skills. My ultimate goal is to become a proficient Full Stack Web
+            Developer.
             <span className="text-2xl text-vividRed-900">&gt;</span>
           </p>
 
@@ -62,7 +62,6 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        {/* btn */}
         <MobileButton />
         <DesktopButton />
       </motion.div>
