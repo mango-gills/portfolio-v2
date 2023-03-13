@@ -84,3 +84,7 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.hover-link > .active {
+  color: #ff3131;
+}

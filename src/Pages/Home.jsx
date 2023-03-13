@@ -1,10 +1,10 @@
+import React from "react";
 import AnimatePage from "../AnimatePages";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/NavbarComponents/Navbar";
-import Projects from "../Components/Projects";
-import React from "react";
+import Projects from "../Components/ProjectsComponents/Projects";
 import Skills from "../Components/SkillsSectionComponents/Skills";
 
 const Home = () => {
