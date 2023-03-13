@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { animateLinks, item, slideInMenu } from "../../motionVariants";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -13,6 +13,15 @@ const NavbarMobile = () => {
   const handleNavigation = () => {
     setNavIsOpen(!navIsOpen);
   };
+
+  useEffect(() => {
+    if (navIsOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [navIsOpen]);
+
   return (
     <div className="fixed z-10 flex w-full items-center justify-between border-b-2 border-vividRed-900 bg-[#08060c] px-6 py-4 text-white lg:hidden">
       <ScrollLink
@@ -78,7 +87,7 @@ const NavbarMobile = () => {
                         to={`${link.element}`}
                         spy={true}
                         smooth={true}
-                        offset={-80}
+                        offset={-90}
                         duration={600}
                         onClick={() => setNavIsOpen(false)}
                       >

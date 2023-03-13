@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { onDisplayVariant, slideInRevealChildren } from "../motionVariants.js";
+import { slideInRevealChildren } from "../../motionVariants.js";
 
-import { elementStyles } from "../styles";
-import { projects } from "../projectsData";
+import { elementStyles } from "../../styles.js";
+import { projects } from "../../projectsData.js";
 import { useRef } from "react";
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
   const [activeCard, setActiveCard] = useState();
-  const control = useAnimation();
+  // const control = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -103,7 +103,7 @@ const Projects = () => {
             key={index}
             transition={{ delay: index * 0.1 }}
             className={
-              activeCard === data.id
+              project.id == data.id
                 ? elementStyles.projectCardActive
                 : elementStyles.projectCard
             }

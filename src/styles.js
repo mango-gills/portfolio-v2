@@ -1,6 +1,6 @@
 export const elementStyles = {
   hoverLink:
-    "hover:duration-150 hover:ease-in cursor-pointer hover:text-red-500",
+    "hover:duration-150 hover:ease-in cursor-pointer hover:text-red-500 hover-link",
   logoScale:
     "h-12 cursor-pointer sm:h-16 xl:h-20 rounded-sm lg:rounded-md xl:rounded-lg bg-[#1F1F1F] p-2 border-2 border-white/5 lg:p-2 xl:p-2",
   inputStyle:
