@@ -25,14 +25,22 @@ const Hero = () => {
         animate="active"
         className="hero-container"
       >
-        <motion.div variants={revealChildren} className="relative">
-          <motion.h1 className="relative z-[2] mb-2 text-[2.6rem] font-bold tracking-wider text-white sm:text-6xl md:text-8xl lg:mb-4 lg:text-[6rem] xl:mb-6 xl:text-[8rem]">
+        <motion.div
+          variants={revealChildren}
+          className="group relative sm:max-w-[420px] md:max-w-[680px] lg:max-w-[660px] xl:max-w-[880px]"
+        >
+          <motion.h1
+            className="relative z-[2] mb-2 text-[2.6rem] font-bold tracking-wider text-white group-hover:text-vividRed-900 group-hover:transition-colors group-hover:duration-300 group-hover:ease-in sm:text-6xl md:text-8xl lg:mb-4
+          lg:text-[6rem] xl:mb-6 xl:text-[8rem]"
+          >
             Hello World!
           </motion.h1>
 
           <motion.h1
             variants={animateShadow}
-            className="absolute -left-[.15rem] top-[.15rem] z-[1] mb-2 text-[2.6rem] font-bold tracking-wider text-vividRed-900/80 selection:text-neutral-900 sm:text-6xl md:-left-[.2rem] md:top-[.2rem] md:text-8xl lg:-left-[.32rem] lg:top-[.35rem] lg:mb-4 lg:text-[6rem] xl:mb-6 xl:text-[8rem]"
+            className="absolute -left-[.15rem] top-[.15rem] z-[1] mb-2 text-[2.6rem] font-bold tracking-wider text-vividRed-900/80 selection:text-neutral-900 group-hover:text-white group-hover:transition-colors group-hover:duration-300 group-hover:ease-in sm:text-6xl md:-left-[.2rem] md:top-[.2rem] md:text-8xl lg:-left-[.32rem] lg:top-[.35rem] lg:mb-4 lg:text-[6rem]
+            xl:mb-6 xl:text-[8rem]            
+            "
           >
             Hello World!
           </motion.h1>
