@@ -9,8 +9,11 @@ import NavbarMobile from "./NavbarMobile";
 const Navbar = () => {
   return (
     <>
-      <div className="fixed hidden min-h-screen w-[400px] border-r-2 border-vividRed-900 bg-[#1F1F1F] px-12 py-12 lg:flex lg:w-[20%] lg:flex-col lg:justify-center lg:px-8 lg:py-6 xl:w-[18%] xl:px-12 xl:py-12">
-        <div className="pointer-events-none flex w-full select-none overflow-hidden rounded-sm lg:h-48 xl:h-56">
+      <div className="fixed hidden min-h-screen w-[400px] select-none border-r-2 border-vividRed-900 bg-[#1F1F1F] px-12 py-12 lg:flex lg:w-[20%] lg:flex-col lg:justify-center lg:px-8 lg:py-6 xl:w-[18%] xl:px-12 xl:py-12">
+        <div
+          className="flex w-full select-none overflow-hidden rounded-sm transition-all duration-500 ease-in-out
+        hover:rounded-full lg:h-48 xl:h-56"
+        >
           <img
             src={avatarIMG}
             alt="avatar"
