@@ -8,7 +8,7 @@ export const elementStyles = {
   projectCard:
     "flex w-full h-16 xl:h-28 bg-[#3D3D3D] border-2 border-[#515151] shadow-black rounded-sm sm:h-20 cursor-pointer items-center pl-3 sm:pl-4 xl:pl-8 text-white font-medium selection:bg-white selection:text-vividRed-900",
   projectCardActive:
-    "flex w-full h-16 xl:h-28 bg-white border-2 border-[#515151] shadow-black rounded-sm sm:h-20 cursor-pointer items-center pl-3 sm:pl-4 xl:pl-8 text-red-500 font-bold",
+    "flex w-full h-16 xl:h-28 bg-white border-2 border-[#515151] shadow-black rounded-sm sm:h-20 cursor-pointer items-center pl-3 sm:pl-4 xl:pl-8 text-red-500 font-bold selection:text-vividRed-900 selection:bg-[#3D3D3D]",
   projectCardHeading:
     "mb-1 text-xs font-semibold tracking-wider sm:text-xl lg:text-lg xl:text-[1.7rem] text-vividRed-900",
   projectCardHeadingActive:
