@@ -9,18 +9,21 @@ import Skills from "../Components/SkillsSectionComponents/Skills";
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen w-full bg-[#161617]">
-      <Navbar />
-      <AnimatePage>
-        <div className="bg-red-300 lg:absolute lg:inset-0 lg:ml-[20%] xl:ml-[18%]">
-          <Hero />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
-      </AnimatePage>
-    </div>
+    <>
+      <div className="relative mx-auto min-h-screen max-w-[1920px]">
+        <Navbar />
+        <AnimatePage>
+          <div className="bg-red-300 lg:absolute lg:inset-0 lg:ml-[20%] xl:ml-[18%]">
+            <Hero />
+            <Skills />
+            <Projects />
+            <Contact />
+            <Footer />
+          </div>
+        </AnimatePage>
+      </div>
+      <div className="fixed left-0 top-0 -z-10 h-full w-full bg-[#2d2d30]"></div>
+    </>
   );
 };
 
