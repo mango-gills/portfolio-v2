@@ -21,7 +21,7 @@ export const projects = [
       code: "github.com/mango-gills/Shappy",
     },
     description:
-      "An updated version of Bootcamp project 3 which is an e-commerce website made in react. The latest version includes a redesigned user interface, Firebase User Authentication, Firestore integration for cart storage, SwiperJS for dynamic carousel components, and TailwindCSS for styling.",
+      "An updated version of Bootcamp project 3 which is an e-commerce website made in ReactJS and uses FakeStoreAPI for products data. The latest version includes a redesigned user interface, Firebase User Authentication, Firestore integration for cart storage, SwiperJS for dynamic carousel components, and TailwindCSS for styling.",
   },
   {
     images: ["./p4-1.webp", "./p4-1.webp"],
