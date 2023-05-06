@@ -21,7 +21,7 @@ export const projects = [
       code: "github.com/mango-gills/Shappy",
     },
     description:
-      "Bootcamp project 3 is a simple E-commerce website made with ReactJS as the frontend and utilizes FakeStoreAPI's products data to populate the page with different kind of products which is randomly displayed at the Featured Products component. I also used TailwindCSS for styling up the page which we also recently learned to use at that time.",
+      "An updated version of Bootcamp project 3 which is an e-commerce website made in react. The latest version includes a redesigned user interface, Firebase User Authentication, Firestore integration for cart storage, SwiperJS for dynamic carousel components, and TailwindCSS for styling.",
   },
   {
     images: ["./p4-1.webp", "./p4-1.webp"],
