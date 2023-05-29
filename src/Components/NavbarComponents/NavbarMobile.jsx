@@ -23,7 +23,7 @@ const NavbarMobile = () => {
   }, [navIsOpen]);
 
   return (
-    <div className="fixed z-10 flex w-full items-center justify-between border-b-2 border-vividRed-900 bg-[#08060c] px-6 py-4 text-white lg:hidden">
+    <div className="fixed z-10 flex w-full items-center justify-between border-b-[1px] border-vividRed-900 bg-[#08060c] px-6 py-5 text-white xl:hidden">
       <ScrollLink
         to={`hero`}
         spy={true}
@@ -35,8 +35,8 @@ const NavbarMobile = () => {
         <h1 className="text-2xl font-bold tracking-widest text-white sm:text-3xl">
           Mango Devs
         </h1>
-        <p className="text-base tracking-widest text-vividRed-900 sm:text-lg">
-          Web Developer
+        <p className="text-[15px] tracking-widest text-vividRed-900 sm:text-lg">
+          Front End Developer
         </p>
       </ScrollLink>
 

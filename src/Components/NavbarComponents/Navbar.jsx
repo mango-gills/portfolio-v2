@@ -9,10 +9,10 @@ import NavbarMobile from "./NavbarMobile";
 const Navbar = () => {
   return (
     <>
-      <div className="fixed hidden min-h-screen w-[400px] select-none border-r-2 border-vividRed-900 bg-[#1F1F1F] px-12 py-12 lg:flex lg:w-[20%] lg:flex-col lg:justify-center lg:px-8 lg:py-6 xl:w-[18%] xl:px-12 xl:py-12">
+      <div className="fixed hidden min-h-screen w-[400px] select-none border-r-[1px] border-vividRed-900 bg-[#1F1F1F] py-8 pl-7 xl:flex xl:w-[22%] xl:flex-col xl:justify-center 2xl:w-[20%] 2xl:py-12 2xl:pl-12">
         <div
           className="flex w-full select-none overflow-hidden rounded-sm transition-all duration-500 ease-in-out
-        hover:rounded-full lg:h-48 xl:h-56"
+        hover:rounded-full xl:h-56 xl:w-56 2xl:h-72 2xl:w-72"
         >
           <img
             src={avatarIMG}
@@ -30,16 +30,16 @@ const Navbar = () => {
             duration={600}
             className="cursor-pointer select-none"
           >
-            <h1 className="text-[2.2rem] font-bold tracking-widest text-white lg:mt-6 lg:text-[1.6rem] xl:text-[2rem]">
+            <h1 className="text-[1.8rem] font-bold tracking-widest text-white lg:mt-6 2xl:text-[2.3rem]">
               Mango Devs
             </h1>
-            <p className="text-xl tracking-widest text-vividRed-900 lg:text-lg xl:text-xl">
-              Web Developer
+            <p className="text-[1.1rem] tracking-widest text-vividRed-900 2xl:text-[1.30rem]">
+              Front End Developer
             </p>
           </ScrollLink>
 
           {/* Page links */}
-          <ul className="mt-6 flex flex-col space-y-2 text-xl text-white xl:mt-12 xl:text-2xl">
+          <ul className="mt-6 flex flex-col space-y-1 text-lg text-white xl:mt-6 2xl:mt-8 2xl:space-y-2 2xl:text-2xl">
             {navLinksDesktop.map((link, idx) => (
               <li key={idx}>
                 {link.element !== "cv" ? (
@@ -67,7 +67,7 @@ const Navbar = () => {
           </ul>
 
           {/* Profile links  */}
-          <ul className="mt-6 space-y-1 text-white xl:mt-12">
+          <ul className="mt-6 text-xl text-white xl:mt-8 2xl:space-y-1">
             {profiles.map((profile, idx) => (
               <li key={idx} className="hover-underline">
                 <a
@@ -82,7 +82,7 @@ const Navbar = () => {
                   ) : (
                     <AiFillLinkedin size={30} />
                   )}
-                  <p className="ml-2 text-lg xl:ml-4 xl:text-xl">
+                  <p className="ml-2 text-base xl:ml-4 2xl:text-xl">
                     {profile.title}
                   </p>
                 </a>
