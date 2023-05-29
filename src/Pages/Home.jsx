@@ -16,7 +16,7 @@ const Home = () => {
           <div className="bg-red-300 lg:absolute lg:inset-0 xl:ml-[22%] 2xl:ml-[20%]">
             <Hero />
             <Skills />
-            {/* <Projects /> */}
+            <Projects />
             {/* <Contact /> */}
             {/* <Footer /> */}
           </div>

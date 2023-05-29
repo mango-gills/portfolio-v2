@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex h-screen w-full select-text flex-col justify-center bg-cover bg-fixed bg-right bg-no-repeat p-6 py-28 selection:bg-vividRed-900 selection:text-neutral-900 lg:h-full xl:bg-bottom xl:pl-28 2xl:pl-36"
+      className="flex h-screen w-full select-text flex-col justify-center bg-cover bg-fixed bg-right bg-no-repeat p-6 py-28 selection:bg-vividRed-900 selection:text-neutral-900 lg:h-full xl:bg-bottom xl:pl-24 2xl:pl-36"
       style={{
         backgroundImage: `url(${mainBg})`,
       }}
@@ -39,12 +39,12 @@ const Hero = () => {
 
         <motion.div
           variants={revealChildren}
-          className="my-6 w-full text-justify text-white md:w-5/6 lg:mt-12 lg:w-3/4 xl:w-[58%]"
+          className="my-6 w-full text-justify text-white md:w-5/6 lg:mt-12 xl:w-3/4 2xl:w-[58%]"
         >
           <h1 className="text-sm font-light text-white/50 md:mb-2 md:text-base lg:text-xl">
             About Me
           </h1>
-          <p className="text-xs leading-loose sm:text-lg md:text-xl md:leading-relaxed xl:text-[1.25rem]">
+          <p className="text-xs leading-loose sm:text-base md:leading-relaxed 2xl:text-[1.25rem]">
             <span className="text-2xl text-vividRed-900">&lt;</span> Hi there!
             I'm Mark Encinares, aspiring to be a skilled Full Stack Web
             Developer. While my focus is primarily on Frontend Development

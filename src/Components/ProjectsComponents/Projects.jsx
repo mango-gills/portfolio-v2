@@ -32,14 +32,14 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="h-full bg-[#161617] pt-[20px] lg:flex lg:min-h-screen lg:flex-row-reverse lg:items-center lg:justify-end lg:py-0 lg:pl-16 xl:pl-28"
+      className="h-full bg-[#161617] pt-[20px] lg:min-h-screen lg:flex-row-reverse lg:items-center lg:justify-end lg:py-0 xl:flex xl:pl-24 2xl:pl-36"
     >
-      <div className="space-y-4 px-8 py-4 text-white selection:bg-white selection:text-vividRed-900 lg:w-[65%]  lg:space-y-0 xl:w-[60%]">
+      <div className="space-y-4 px-8 py-4 text-white selection:bg-white selection:text-vividRed-900 lg:space-y-0 xl:max-w-[700px] 2xl:max-w-[900px]">
         <h1 className="text-2xl font-bold drop-shadow-vividRed-lg lg:hidden">
           PROJECTS
         </h1>
         <div
-          className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:h-[305px] lg:bg-cover xl:h-[415px]"
+          className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:h-[320px] lg:bg-cover 2xl:h-[415px]"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
         />
         <h1
@@ -49,41 +49,41 @@ const Projects = () => {
           {project?.title}
         </h1>
         <div className="flex w-full flex-col lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
-          <div className="flex space-x-2 lg:flex-col lg:space-x-0 lg:text-lg xl:text-xl">
-            <p>Tech Stack:</p>
+          <div className="flex flex-row items-center space-x-2">
             <div className="flex space-x-4">
               {project?.stack.map((list, idx) => {
                 return (
-                  <p key={idx} className="text-vividRed-900">
+                  <p
+                    key={idx}
+                    className="rounded-full border-[.5px] border-vividRed-900 py-1 px-2 text-xs text-white xl:text-sm"
+                  >
                     {list}
                   </p>
                 );
               })}
             </div>
           </div>
-          <div className="flex space-x-2  lg:flex-col lg:space-x-0 lg:text-lg xl:text-xl">
-            <p>Links:</p>
+          <div className="flex space-x-2  lg:flex-col lg:space-x-0">
             <div className="flex space-x-2">
               <a
                 href={`${project?.links.demo}`}
                 target={"_blank"}
                 rel={"external"}
-                className="text-vividRed-900"
+                className="rounded-md bg-white px-3 py-1 text-black"
               >
                 Demo
               </a>
-              <p className="text-vividRed-900">|</p>
               <a
                 href={`https://www.${project?.links.code}`}
                 target="_blank"
-                className="text-vividRed-900"
+                className="rounded-md bg-[#3d3d3d] px-3 py-1 text-white"
               >
                 Code
               </a>
             </div>
           </div>
         </div>
-        <p className="text-justify text-sm lg:text-base lg:leading-6 xl:text-lg xl:leading-10">
+        <p className="text-justify text-xs leading-relaxed md:text-base xl:text-base xl:leading-8 2xl:text-lg 2xl:leading-10">
           {project?.description}
           <br />{" "}
           <a
@@ -96,7 +96,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <ul className="grid grid-cols-3 gap-2 px-8 lg:w-[20%] lg:grid-cols-1 lg:gap-3 lg:px-4 xl:gap-6">
+      <ul className="grid grid-cols-3 gap-2 px-8 xl:grid-cols-1 xl:gap-3 xl:px-0 2xl:w-[18%] 2xl:gap-5 ">
         {projects.map((data, index) => (
           <motion.li
             animate={animateCards}

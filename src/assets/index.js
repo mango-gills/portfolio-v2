@@ -64,7 +64,7 @@ export const techStack = [
     logo: bootstrap,
   },
   {
-    name: "Framer Motion",
+    name: "Motion",
     logo: motion,
   },
 ];

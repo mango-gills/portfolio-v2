@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="fixed hidden min-h-screen w-[400px] select-none border-r-[1px] border-vividRed-900 bg-[#1F1F1F] py-8 pl-7 xl:flex xl:w-[22%] xl:flex-col xl:justify-center 2xl:w-[20%] 2xl:py-12 2xl:pl-12">
         <div
           className="flex w-full select-none overflow-hidden rounded-sm transition-all duration-500 ease-in-out
-        hover:rounded-full xl:h-56 xl:w-56 2xl:h-72 2xl:w-72"
+        hover:rounded-full xl:h-56 xl:w-56 2xl:h-64 2xl:w-64"
         >
           <img
             src={avatarIMG}
@@ -30,10 +30,10 @@ const Navbar = () => {
             duration={600}
             className="cursor-pointer select-none"
           >
-            <h1 className="text-[1.8rem] font-bold tracking-widest text-white lg:mt-6 2xl:text-[2.3rem]">
+            <h1 className="text-[1.8rem] font-bold tracking-widest text-white lg:mt-6 2xl:text-[2.2rem]">
               Mango Devs
             </h1>
-            <p className="text-[1.1rem] tracking-widest text-vividRed-900 2xl:text-[1.30rem]">
+            <p className="text-[1.1rem] tracking-widest text-vividRed-900 2xl:text-[1.28rem]">
               Front End Developer
             </p>
           </ScrollLink>

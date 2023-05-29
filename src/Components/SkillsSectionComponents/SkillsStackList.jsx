@@ -7,13 +7,13 @@ const SkillsStackList = ({ stack, animateLogo, animateText }) => {
   return (
     <div>
       <ul
-        className="mt-8 mb-4 grid max-w-[1200px] select-none grid-cols-4 justify-center gap-2
+        className="mt-6 mb-4 grid max-w-[1200px] select-none grid-cols-4 gap-y-2
     md:grid-cols-6 lg:grid-cols-8"
       >
         {stack.map((item, idx) => (
           <li
             key={idx}
-            className="mb-6 flex flex-col items-center space-y-1 text-center lg:space-y-2"
+            className="mb-2 flex flex-col items-center space-y-1 lg:space-y-2 2xl:mb-6"
           >
             <motion.img
               variants={scaleOnHover}
@@ -29,7 +29,7 @@ const SkillsStackList = ({ stack, animateLogo, animateText }) => {
                 animate={animateText}
                 // variants={revealText}
                 // initial="init"
-                className="text-xs md:text-sm xl:text-base"
+                className="text-xs md:text-sm 2xl:text-base"
               >
                 {item.name}
               </motion.p>
