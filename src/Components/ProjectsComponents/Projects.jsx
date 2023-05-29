@@ -50,7 +50,7 @@ const Projects = () => {
         </h1>
         <div className="flex w-full flex-col lg:flex-row lg:justify-between lg:pb-2 xl:pb-2">
           <div className="flex flex-row items-center space-x-2">
-            <div className="flex space-x-4">
+            <div className="mb-3 flex space-x-4 xl:mb-0">
               {project?.stack.map((list, idx) => {
                 return (
                   <p
@@ -63,7 +63,7 @@ const Projects = () => {
               })}
             </div>
           </div>
-          <div className="flex space-x-2  lg:flex-col lg:space-x-0">
+          <div className="flex space-x-2  text-xs md:text-base lg:flex-col lg:space-x-0">
             <div className="flex space-x-2">
               <a
                 href={`${project?.links.demo}`}

@@ -17,8 +17,8 @@ const Home = () => {
             <Hero />
             <Skills />
             <Projects />
-            {/* <Contact /> */}
-            {/* <Footer /> */}
+            <Contact />
+            <Footer />
           </div>
         </AnimatePage>
       </div>
