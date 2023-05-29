@@ -29,13 +29,13 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="flex h-full flex-col items-start bg-[#161617]  py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center  lg:pl-24 xl:pl-32"
+      className="flex h-full flex-col items-start bg-[#161617]  py-12 px-8 text-white selection:bg-white selection:text-vividRed-900 lg:min-h-screen lg:justify-center xl:pl-24 2xl:pl-36"
     >
       <div className="w-full space-y-2 text-white lg:space-y-4">
-        <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg sm:text-3xl xl:text-5xl">
+        <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg xl:text-3xl 2xl:text-5xl">
           Tech Stacks
         </h1>
-        <p className="text-base sm:text-lg xl:text-2xl">
+        <p className="text-sm sm:text-lg 2xl:text-2xl">
           Working knowledge on the following web development languages,
           frameworks, libraries and platforms.
         </p>
@@ -48,11 +48,11 @@ const Skills = () => {
       </div>
 
       {/*  */}
-      <div className="w-full space-y-2 lg:mt-2 lg:space-y-4 xl:mt-8">
-        <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg sm:text-3xl xl:text-5xl">
+      <div className="w-full space-y-2 lg:space-y-4 xl:mt-3 2xl:mt-8">
+        <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg xl:text-3xl 2xl:text-5xl">
           Development Tools
         </h1>
-        <p className="text-base sm:text-lg xl:text-2xl">
+        <p className="text-sm sm:text-lg 2xl:text-2xl">
           These are the tools that I use for web development.
         </p>
 
@@ -64,10 +64,10 @@ const Skills = () => {
       </div>
 
       <div ref={ref}>
-        <h2 className="mt-2 mb-2 text-2xl font-bold drop-shadow-vividRed-lg xl:mb-3 xl:mt-4">
+        <h2 className="mt-2 mb-2 text-xl font-bold drop-shadow-vividRed-lg xl:mb-3 xl:text-2xl 2xl:mt-4">
           Other Skills
         </h2>
-        <ul className="flex flex-col space-y-2 text-base lg:flex-row lg:space-y-0 lg:space-x-4 lg:text-lg xl:text-xl">
+        <ul className="flex flex-col space-y-2 text-sm lg:flex-row lg:space-y-0 lg:space-x-4 xl:text-lg 2xl:text-xl">
           <li>Computer Troubleshooting and Repair</li>
           <li className="hidden font-semibold text-vividRed-900 lg:block">|</li>
           <li>Digital Photo Manipulation</li>

@@ -15,7 +15,7 @@ export const projects = [
     images: ["./p3-1.webp", "./p3-1.webp"],
     id: "002",
     title: "Shappy",
-    stack: ["ReactJS", "Tailwind", "FakeStoreAPI"],
+    stack: ["ReactJS", "Tailwind CSS", "FakeStoreAPI"],
     links: {
       demo: "https://shappy.vercel.app/",
       code: "github.com/mango-gills/Shappy",
@@ -51,7 +51,7 @@ export const projects = [
     images: ["./p7-1.webp", "./p7-2.webp"],
     id: "005",
     title: "React Todo",
-    stack: ["ReactJS", "Tailwind", "Firebase"],
+    stack: ["ReactJS", "Tailwind CSS", "Firebase"],
     links: {
       demo: "google.com/",
       code: "github.com/mango-gills/react-todoapp",
@@ -63,7 +63,7 @@ export const projects = [
     images: ["./p6-1.webp", "./p6-2.webp"],
     id: "006",
     title: "Shortly",
-    stack: ["ReactJS", "Tailwind", "Shrtcode-API"],
+    stack: ["ReactJS", "Tailwind CSS", "Shrtcode-API"],
     links: {
       demo: "google.com/",
       code: "github.com/mango-gills/url-shortening-api",

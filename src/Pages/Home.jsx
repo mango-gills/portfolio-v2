@@ -13,7 +13,7 @@ const Home = () => {
       <div className="relative mx-auto min-h-screen max-w-[1920px]">
         <Navbar />
         <AnimatePage>
-          <div className="bg-red-300 lg:absolute lg:inset-0 lg:ml-[20%] xl:ml-[18%]">
+          <div className="bg-red-300 lg:absolute lg:inset-0 xl:ml-[22%] 2xl:ml-[20%]">
             <Hero />
             <Skills />
             <Projects />
