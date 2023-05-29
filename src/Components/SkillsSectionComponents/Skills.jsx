@@ -64,7 +64,7 @@ const Skills = () => {
       </div>
 
       <div ref={ref}>
-        <h2 className="mt-2 mb-2 text-xl font-bold drop-shadow-vividRed-lg xl:mb-3 2xl:mt-4">
+        <h2 className="mt-2 mb-2 text-xl font-bold drop-shadow-vividRed-lg xl:mb-3 xl:text-2xl 2xl:mt-4">
           Other Skills
         </h2>
         <ul className="flex flex-col space-y-2 text-sm lg:flex-row lg:space-y-0 lg:space-x-4 xl:text-lg 2xl:text-xl">
