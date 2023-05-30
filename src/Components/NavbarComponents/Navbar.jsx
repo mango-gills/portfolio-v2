@@ -54,11 +54,7 @@ const Navbar = () => {
                     {link.title}
                   </ScrollLink>
                 ) : (
-                  <a
-                    className="hover-underline"
-                    href="https://github.com/mango-gills"
-                    target="_blank"
-                  >
+                  <a className="hover-underline" href="" target="_blank">
                     {link.title}
                   </a>
                 )}
