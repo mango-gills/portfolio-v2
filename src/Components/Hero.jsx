@@ -54,7 +54,7 @@ const Hero = () => {
             <span className="text-2xl text-vividRed-900">&gt;</span>
           </p>
 
-          <p className="mt-4 text-xs lg:mt-8 lg:text-xl">
+          <p className="mt-4 text-xs lg:mt-8 lg:text-lg 2xl:text-xl">
             <span className="text-xs text-vividRed-900 lg:text-xl">&#91; </span>
             Let's build something great!
             <span className="text-xs text-vividRed-900 lg:text-xl"> &#93;</span>
