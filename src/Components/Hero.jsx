@@ -39,7 +39,7 @@ const Hero = () => {
 
         <motion.div
           variants={revealChildren}
-          className="my-6 w-full text-justify text-white md:w-5/6 lg:mt-12 xl:w-3/4 2xl:w-[58%]"
+          className="my-6 w-full text-justify text-white md:w-5/6 xl:w-3/4 2xl:mt-12 2xl:w-[58%]"
         >
           <h1 className="text-sm font-light text-white/50 md:mb-2 md:text-base lg:text-xl">
             About Me
