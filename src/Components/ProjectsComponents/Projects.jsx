@@ -39,12 +39,12 @@ const Projects = () => {
           PROJECTS
         </h1>
         <div
-          className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:h-[320px] lg:bg-cover 2xl:h-[415px]"
+          className="relative h-[220px] w-full overflow-hidden bg-contain bg-top bg-no-repeat drop-shadow-lg md:h-[300px] lg:bg-cover xl:h-[300px] 2xl:h-[415px]"
           style={{ backgroundImage: `url(${project?.images[0]})` }}
         />
         <h1
           ref={ref}
-          className="text-2xl font-bold text-vividRed-900 drop-shadow-dark-lg lg:py-2 lg:text-3xl xl:py-8 xl:text-5xl"
+          className="text-2xl font-bold text-vividRed-900 drop-shadow-dark-lg lg:py-2 lg:text-3xl xl:py-5 xl:text-4xl 2xl:py-8 2xl:text-5xl"
         >
           {project?.title}
         </h1>
@@ -83,7 +83,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <p className="text-justify text-xs leading-relaxed md:text-base xl:text-base xl:leading-8 2xl:text-lg 2xl:leading-10">
+        <p className="text-justify text-xs leading-relaxed md:text-sm xl:leading-6 2xl:text-lg 2xl:leading-10">
           {project?.description}
           <br />{" "}
           <a

@@ -13,9 +13,6 @@ const Contact = () => {
           <h1 className="text-4xl font-bold drop-shadow-vividRed-lg selection:bg-white xl:mb-6 xl:text-5xl 2xl:mb-10 2xl:text-7xl">
             Contact Me
           </h1>
-          <p className="my-2 text-red-500 xl:text-xl">
-            @: markencinares@gmail.com
-          </p>
           <form
             action="https://formsubmit.co/55f67f64112f800526528b28cf97aca7"
             method="POST"
@@ -52,7 +49,7 @@ const Contact = () => {
               id=""
               cols="30"
               rows="10"
-              className={`${elementStyles.inputStyle} font-light 2xl:h-[30%]`}
+              className={`${elementStyles.inputStyle} font-light xl:h-[200px] 2xl:h-[30%]`}
               placeholder="message"
             ></textarea>
             <button
