@@ -8,7 +8,7 @@ const SkillsStackList = ({ stack, animateLogo, animateText }) => {
     <div>
       <ul
         className="mt-6 mb-4 grid max-w-[1200px] select-none grid-cols-3 gap-3
-    md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-5 2xl:gap-4"
+    md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-5 2xl:gap-4"
       >
         {stack.map((item, idx) => (
           <li
