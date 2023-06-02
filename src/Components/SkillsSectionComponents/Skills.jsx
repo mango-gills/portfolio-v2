@@ -35,7 +35,7 @@ const Skills = () => {
         <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg xl:text-3xl 2xl:text-5xl">
           Tech Stacks
         </h1>
-        <p className="text-sm sm:text-lg 2xl:text-2xl">
+        <p className="text-sm sm:text-base 2xl:text-2xl">
           Working knowledge on the following web development languages,
           frameworks, libraries and platforms.
         </p>
@@ -52,7 +52,7 @@ const Skills = () => {
         <h1 className="text-3xl font-semibold drop-shadow-vividRed-lg xl:text-3xl 2xl:text-5xl">
           Development Tools
         </h1>
-        <p className="text-sm sm:text-lg 2xl:text-2xl">
+        <p className="text-sm sm:text-base 2xl:text-2xl">
           These are the tools that I use for web development.
         </p>
 
@@ -67,7 +67,7 @@ const Skills = () => {
         <h2 className="mt-2 mb-2 text-xl font-bold drop-shadow-vividRed-lg xl:mb-3 xl:text-2xl 2xl:mt-4">
           Other Skills
         </h2>
-        <ul className="flex flex-col space-y-2 text-sm lg:flex-row lg:space-y-0 lg:space-x-4 xl:text-lg 2xl:text-xl">
+        <ul className="flex flex-col space-y-2 text-sm lg:flex-row lg:space-y-0 lg:space-x-4 xl:text-base 2xl:text-xl">
           <li>Computer Troubleshooting and Repair</li>
           <li className="hidden font-semibold text-vividRed-900 lg:block">|</li>
           <li>Digital Photo Manipulation</li>

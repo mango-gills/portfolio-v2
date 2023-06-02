@@ -2,7 +2,7 @@ export const elementStyles = {
   hoverLink:
     "hover:duration-150 hover:ease-in cursor-pointer hover:text-red-500 hover-link",
   logoScale:
-    "h-5 cursor-pointer lg:h-12 lg:p-2 2xl:h-16 rounded-sm lg:rounded-md xl:rounded-lg",
+    "h-5 cursor-pointer lg:h-10 lg:p-2 2xl:h-16 rounded-sm lg:rounded-md xl:rounded-lg",
   inputStyle:
     "w-full py-2 px-4 bg-transparent border-2 border-red-500 rounded-sm outline-transparent outline text-xs sm:text-sm xl:text-lg placeholder:font-medium font-light bg-[#1f1f1f] focus:placeholder:text-white/80 focus:placeholder:font-semibold caret-vividRed-900",
   projectCard:

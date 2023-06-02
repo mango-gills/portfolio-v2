@@ -29,7 +29,7 @@ const SkillsStackList = ({ stack, animateLogo, animateText }) => {
                 animate={animateText}
                 // variants={revealText}
                 // initial="init"
-                className="text-[11px] md:text-sm 2xl:text-lg"
+                className="text-[11px] md:text-[12px] 2xl:text-lg"
               >
                 {item.name}
               </motion.p>
